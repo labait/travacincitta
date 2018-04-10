@@ -25,3 +25,12 @@ function theme_enqueue_styles() {
         wp_enqueue_script( 'comment-reply' );
     }
 }
+
+
+
+function my_acf_init() {	
+    acf_update_setting('google_api_key', 'AIzaSyDz4CZQG52QtmpoawNGxJInRWeOYRw-Gcc');   
+}
+add_action('acf/init', 'my_acf_init');
+
+
