@@ -1,5 +1,17 @@
 
-$color1: #fdc900;
+@import 'variables';
+
+@import 'page-templates/_template1.scss';
+@import 'page-templates/_walkthrough.scss';
+@import 'page-templates/_map.scss';
+@import 'page-templates/_contact.scss';
+
+
+body,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6  {
+  color: $color2;
+}
 
 a {
   color: $color1;
