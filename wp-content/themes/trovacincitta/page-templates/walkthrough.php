@@ -20,21 +20,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
-					<?php
-						$query = new WP_Query( 
-							array( 
-								'post_type' => 'help_item', 
-								'posts_per_page'	=> -1,
-								'meta_key' => 'ord',
-								'orderby'	=> 'meta_value',
-								'order'	=> 'ASC'
-							) 
-						);         
-						while ( $query->have_posts() ) : $query->the_post(); 
-					?>   
-						<?php get_template_part( 'loop-templates/content', 'help_item' ); ?>
-					<?php endwhile; wp_reset_query(); ?>
-
+					<div id="walkthrough" class="slick">		
+						<?php
+							$query = new WP_Query( 
+								array( 
+									'post_type' => 'help_item', 
+									'posts_per_page'	=> -1,
+									'meta_key' => 'ord',
+									'orderby'	=> 'meta_value',
+									'order'	=> 'ASC'
+								) 
+							);         
+							while ( $query->have_posts() ) : $query->the_post(); 
+						?>   
+							<?php get_template_part( 'loop-templates/content', 'help_item' ); ?>
+						<?php endwhile; wp_reset_query(); ?>
+					</div>
 				</main><!-- #main -->
 
 			</div><!-- #primary -->

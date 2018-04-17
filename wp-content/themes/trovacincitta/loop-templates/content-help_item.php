@@ -1,5 +1,5 @@
 <?php $image = get_field('icon'); ?>
-<div>
+<div class="item">
     <h2><?php the_title(); ?></h2>
     <?php if( $image ): ?>
       <div>
