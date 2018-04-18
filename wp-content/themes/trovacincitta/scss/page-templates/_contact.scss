@@ -1,3 +1,26 @@
 body.page-template-contact {
-  
+  h1{
+    font-family: $font1;
+    color: $color1;
+    text-transform: uppercase;
+    font-size: $font-size1;
+    text-align: center;
+  }
+  form.wpcf7-form p span.wpcf7-form-control-wrap input, form.wpcf7-form p span.wpcf7-form-control-wrap textarea{
+    background-color: $color3;
+  }
+  .wpcf7 input, .wpcf7 textarea{
+    border: 0px;
+    border-radius: 0;
+  }
+  label{
+    font-size: 13px;
+  }
+  .wpcf7 input[type=submit]{
+    background: $color1;
+    border-radius: 25em;
+    width: 180px;
+    color: white;
+    float: right;
+  }
 }

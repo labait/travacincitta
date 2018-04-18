@@ -1,6 +1,72 @@
 body.page-template-walkthrough #walkthrough.slick .item {
   height: 300px; }
 
+body.page-template-chisiamo .box h1 {
+  text-align: center;
+  color: #fbba00;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "BebasNeueBold"; }
+body.page-template-chisiamo .box h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: #424345;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif; }
+body.page-template-chisiamo .box p {
+  text-align: center;
+  color: #424345;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif; }
+
+body.page-template-scattanelpassato h1 {
+  color: #fbba00;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "BebasNeueBold"; }
+body.page-template-scattanelpassato .box ul {
+  list-style-type: none;
+  padding: 0; }
+  body.page-template-scattanelpassato .box ul li {
+    width: 300px;
+    margin: 15px;
+    display: inline-block; }
+    body.page-template-scattanelpassato .box ul li h2 {
+      color: #fbba00;
+      font-size: 17px;
+      font-family: "Open Sans", sans-serif; }
+    body.page-template-scattanelpassato .box ul li p {
+      color: #424345;
+      background: #f8f8f8;
+      padding: 15px;
+      font-size: 17px;
+      font-family: "Open Sans", sans-serif; }
+
+body.page-template-contact h1 {
+  font-family: "BebasNeueBold";
+  color: #fbba00;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center; }
+body.page-template-contact form.wpcf7-form p span.wpcf7-form-control-wrap input, body.page-template-contact form.wpcf7-form p span.wpcf7-form-control-wrap textarea {
+  background-color: #f8f8f8; }
+body.page-template-contact .wpcf7 input, body.page-template-contact .wpcf7 textarea {
+  border: 0px;
+  border-radius: 0; }
+body.page-template-contact label {
+  font-size: 13px; }
+body.page-template-contact .wpcf7 input[type=submit] {
+  background: #fbba00;
+  border-radius: 25em;
+  width: 180px;
+  color: white;
+  float: right; }
+
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url("BebasNeueBold.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
 body,
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -8,5 +74,17 @@ h1, h2, h3, h4, h5, h6,
 
 a {
   color: #fbba00; }
+
+nav .navbar-brand {
+  width: 60px;
+  height: auto; }
+nav #navbarNavDropdown a {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 17px; }
+nav #navbarNavDropdown a:hover {
+  font-weight: normal; }
 
 /*# sourceMappingURL=style.css.map */

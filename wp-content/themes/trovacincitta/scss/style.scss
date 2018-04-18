@@ -4,8 +4,16 @@
 @import 'page-templates/_template1.scss';
 @import 'page-templates/_walkthrough.scss';
 @import 'page-templates/_map.scss';
+@import 'page-templates/_chisiamo.scss';
+@import 'page-templates/_scattanelpassato.scss';
 @import 'page-templates/_contact.scss';
 
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url('BebasNeueBold.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body,
 h1, h2, h3, h4, h5, h6,
@@ -15,4 +23,23 @@ h1, h2, h3, h4, h5, h6,
 
 a {
   color: $color1;
+}
+
+nav{
+  .navbar-brand{
+    width: 60px;
+    height: auto;
+  }
+  #navbarNavDropdown{
+    a{
+      color: white;
+      font-family: $font2;
+      text-transform: uppercase;
+      font-weight: lighter;
+      font-size: $font-size2;
+    }
+    a:hover{
+      font-weight:normal;
+    }
+  }
 }
