@@ -11,6 +11,8 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 <div class="wrapper" id="full-width-page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
