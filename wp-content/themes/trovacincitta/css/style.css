@@ -88,3 +88,36 @@ nav #navbarNavDropdown a:hover {
   font-weight: normal; }
 
 /*# sourceMappingURL=style.css.map */
+#slide-title-h2{
+  text-align: center;
+  font-family: "BebasNeueBold";
+    font-size: 40px;
+      color: #fbba00;
+}
+.slide-img-container{
+
+  text-align: -webkit-center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.slide-img{
+  width: 180px;
+}
+
+.button-start{
+  width: 160px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 30px;
+  margin-left: 50%;
+  left: -80px;
+  color: #ffffff;
+}
+
+.page-walkthrough{
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif; }
+
+}

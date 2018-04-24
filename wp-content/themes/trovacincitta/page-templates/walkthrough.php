@@ -11,7 +11,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="wrapper" id="full-width-page-wrapper">
+<div class="wrapper page-walkthrough" id="full-width-page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
@@ -37,6 +37,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php endwhile; wp_reset_query(); ?>
 					</div>
 				</main><!-- #main -->
+
+				<a href="#" class="button-start" style="
+					display: block;
+					width: 160px;
+					text-align: center;
+					margin-left: 50%;
+					left: -80px;
+					color: #000000;
+					position: relative;
+				">Salta ></a>
 
 			</div><!-- #primary -->
 
