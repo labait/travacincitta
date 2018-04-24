@@ -1,6 +1,9 @@
 (function($){
   $(function(){
-    
+    //loading
+    $('body').loading({
+      stoppable: true
+    });
 
     // slick carousel walkthrough
     $('#walkthrough.slick').slick({
