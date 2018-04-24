@@ -31,7 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								);         
 								while ( $query->have_posts() ) : $query->the_post(); 
 							?>   
-								<?php get_template_part( 'loop-templates/content', 'content' ); ?>
+								<?php get_template_part( 'loop-templates/content', 'content-map-item' ); ?>
 							<?php endwhile; wp_reset_query(); ?>
 						</div>
 
@@ -87,6 +87,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 	function userPosition(){
 		infoWindow = new google.maps.InfoWindow;
 		if (navigator.geolocation) {
+			$('body').loading({
+				message: 'Ricerca posizione...',
+				theme: 'dark',
+				stoppable: true
+			});
 			navigator.geolocation.getCurrentPosition(function(position) {
 				var pos = {
 					lat: position.coords.latitude,
@@ -97,13 +102,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 				infoWindow.setContent('Location found.');
 				infoWindow.open(map);
 				map.setCenter(pos);
+				$('body').loading('stop');
 			}, function() {
 				handleLocationError(true, infoWindow, map.getCenter());
+				$('body').loading('stop');
 			});
 		} else {
 			// Browser doesn't support Geolocation
 			handleLocationError(false, infoWindow, map.getCenter());
 		}
+	}
+
+	function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+		$('body').loading('stop');
+		infoWindow.setPosition(pos);
+		infoWindow.setContent(browserHasGeolocation ?
+													'Error: The Geolocation service failed.' :
+													'Error: Your browser doesn\'t support geolocation.');
+		infoWindow.open(map);
 	}
 
 	function center_map( map ) {
