@@ -1,0 +1,18 @@
+body.page-template-walkthrough #walkthrough.slick .item {
+  height: 300px; }
+
+body.page-template-contact {
+  background: red; }
+
+body,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #424345; }
+
+a {
+  color: #fbba00; }
+
+/*# sourceMappingURL=style.css.map */
+.slick-track .slick-slide h2{
+	text-align: center;
+}
