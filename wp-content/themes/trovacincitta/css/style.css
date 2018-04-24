@@ -1,5 +1,28 @@
 body.page-template-walkthrough #walkthrough.slick .item {
   height: 300px; }
+body.page-template-walkthrough #slide-title-h2 {
+  text-align: center;
+  font-family: "BebasNeueBold";
+  font-size: 40px;
+  color: #fbba00; }
+body.page-template-walkthrough .slide-img-container {
+  text-align: -webkit-center;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+body.page-template-walkthrough .slide-img {
+  width: 180px; }
+body.page-template-walkthrough .button-start {
+  width: 160px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 30px;
+  margin-left: 50%;
+  left: -80px;
+  color: white; }
+body.page-template-walkthrough .page-walkthrough {
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif; }
 
 body.page-template-chisiamo .box h1 {
   text-align: center;
@@ -88,36 +111,3 @@ nav #navbarNavDropdown a:hover {
   font-weight: normal; }
 
 /*# sourceMappingURL=style.css.map */
-#slide-title-h2{
-  text-align: center;
-  font-family: "BebasNeueBold";
-    font-size: 40px;
-      color: #fbba00;
-}
-.slide-img-container{
-
-  text-align: -webkit-center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.slide-img{
-  width: 180px;
-}
-
-.button-start{
-  width: 160px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  border-radius: 30px;
-  margin-left: 50%;
-  left: -80px;
-  color: #ffffff;
-}
-
-.page-walkthrough{
-  font-size: 17px;
-  font-family: "Open Sans", sans-serif; }
-
-}
