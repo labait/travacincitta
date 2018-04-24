@@ -1,0 +1,24 @@
+body.page-template-chisiamo {
+  .box{
+    h1{
+      text-align: center;
+      color: $color1;
+      text-transform: uppercase;
+      font-size: $font-size1;
+      font-family: $font1;
+    }
+    h2{
+      text-align: center;
+      margin-top: $spacer*2;
+      color: $color2;
+      font-size: $font-size2;
+      font-family: $font2;
+    }
+    p{
+      text-align: center;
+      color: $color2;
+      font-size: $font-size2;
+      font-family: $font2;
+    }
+  }
+}

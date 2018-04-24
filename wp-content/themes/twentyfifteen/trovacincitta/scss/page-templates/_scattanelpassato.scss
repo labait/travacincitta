@@ -1,0 +1,32 @@
+body.page-template-scattanelpassato {
+    h1{
+      color: $color1;
+      text-transform: uppercase;
+      font-size: $font-size1;
+      font-family: $font1;
+    }
+    .box ul{
+      list-style-type: none;
+      padding: 0;
+      li{
+        width: 300px;
+        margin: $spacer;
+        display: inline-block;
+        h2{
+          color: $color1;
+          font-size: 17px;
+          font-family: $font2;
+        }
+        p{
+          color: $color2;
+          background: $color3;
+          padding: $spacer;
+          font-size: $font-size2;
+          font-family: $font2;
+        }
+      }
+
+    }
+
+
+}
