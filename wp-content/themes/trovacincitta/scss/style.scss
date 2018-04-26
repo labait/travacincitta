@@ -42,3 +42,18 @@ nav{
     }
   }
 }
+
+#cookie-law-info-bar{
+  font-family: $font2 !important;
+  padding: $spacer;
+  .cli-plugin-main-link {
+    text-decoration: underline;
+  }
+  #cookie_action_close_header{
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 25em;
+    float: right;
+    padding:$spacer/2 $spacer*2;
+  }
+}

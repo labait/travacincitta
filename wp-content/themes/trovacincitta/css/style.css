@@ -24,6 +24,11 @@ body.page-template-walkthrough .page-walkthrough {
   font-size: 17px;
   font-family: "Open Sans", sans-serif; }
 
+body.page-template-map .acf-map {
+  width: 100%;
+  height: 300px;
+  border: 1px solid red; }
+
 body.page-template-chisiamo .box h1 {
   text-align: center;
   color: #fbba00;
@@ -109,5 +114,17 @@ nav #navbarNavDropdown a {
   font-size: 17px; }
 nav #navbarNavDropdown a:hover {
   font-weight: normal; }
+
+#cookie-law-info-bar {
+  font-family: "Open Sans", sans-serif !important;
+  padding: 15px; }
+  #cookie-law-info-bar .cli-plugin-main-link {
+    text-decoration: underline; }
+  #cookie-law-info-bar #cookie_action_close_header {
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 25em;
+    float: right;
+    padding: 7.5px 30px; }
 
 /*# sourceMappingURL=style.css.map */
