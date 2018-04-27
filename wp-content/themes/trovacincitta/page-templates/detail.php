@@ -24,6 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</main><!-- #main -->
 				<div class="bg"></div>
 				<div class="overlay">
+
 					<img src="http://localhost:8888/trovacincitta/wp-content/uploads/2018/04/logo-white.png" alt="">
 					<h3>15 Maggio - 30 settembre 2018 </h3>
 					<h3> Museo santa giulia - Brescia</h3>
