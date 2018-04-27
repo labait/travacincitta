@@ -9,5 +9,7 @@
       slidesToShow: 1,
       adaptiveHeight: true
     });
+    setTimeout(function(){ $(".bg").show(); }, 8000);
+    setTimeout(function(){ $(".overlay").show(); }, 8000);
   })
 })(jQuery)
