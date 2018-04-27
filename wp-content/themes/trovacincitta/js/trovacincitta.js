@@ -1,9 +1,5 @@
 (function($){
   $(function(){
-    //loading
-    $('body').loading({
-      stoppable: true
-    });
 
     // slick carousel walkthrough
     $('#walkthrough.slick').slick({
@@ -13,5 +9,7 @@
       slidesToShow: 1,
       adaptiveHeight: true
     });
+    setTimeout(function(){ $(".bg").show(); }, 8000);
+    setTimeout(function(){ $(".overlay").show(); }, 8000);
   })
 })(jQuery)
