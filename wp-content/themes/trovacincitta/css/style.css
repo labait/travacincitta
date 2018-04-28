@@ -111,6 +111,8 @@ body.page-template-detail {
       margin-right: auto;
       margin-top: 15px;
       margin-bottom: 15px; }
+  body.page-template-detail #detail {
+    height: 100vh; }
 
 body.page-template-contact h1 {
   font-family: "BebasNeueBold";
@@ -119,12 +121,16 @@ body.page-template-contact h1 {
   font-size: 40px;
   text-align: center; }
 body.page-template-contact form.wpcf7-form p span.wpcf7-form-control-wrap input, body.page-template-contact form.wpcf7-form p span.wpcf7-form-control-wrap textarea {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  font-family: "Open Sans", sans-serif; }
 body.page-template-contact .wpcf7 input, body.page-template-contact .wpcf7 textarea {
-  border: 0px;
-  border-radius: 0; }
-body.page-template-contact label {
-  font-size: 13px; }
+  border: none;
+  border-radius: 0;
+  font-family: "Open Sans", sans-serif; }
+body.page-template-contact label, body.page-template-contact .wpcf7-form p {
+  font-size: 10px; }
+body.page-template-contact .wpcf7-list-item {
+  margin: 0; }
 body.page-template-contact .wpcf7 input[type=submit] {
   background: #fbba00;
   border-radius: 25em;
@@ -157,6 +163,13 @@ nav #navbarNavDropdown a {
 nav #navbarNavDropdown a:hover {
   font-weight: normal; }
 
+footer {
+  bottom: 0px; }
+  footer .site-info {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    text-align: center; }
+
 #cookie-law-info-bar {
   font-family: "Open Sans", sans-serif !important;
   padding: 15px; }
@@ -166,7 +179,6 @@ nav #navbarNavDropdown a:hover {
     box-shadow: none;
     text-shadow: none;
     border-radius: 25em;
-    float: right;
     padding: 7.5px 30px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Creato il: Apr 28, 2018 alle 12:22
+-- Creato il: Apr 28, 2018 alle 14:19
 -- Versione del server: 5.5.42
 -- Versione PHP: 5.6.10
 
@@ -97,7 +97,7 @@ CREATE TABLE `wp_options` (
   `option_name` varchar(191) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `option_value` longtext COLLATE utf8_unicode_ci NOT NULL,
   `autoload` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'yes'
-) ENGINE=InnoDB AUTO_INCREMENT=793 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=803 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dump dei dati per la tabella `wp_options`
@@ -348,7 +348,7 @@ CREATE TABLE `wp_postmeta` (
   `post_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `meta_key` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `meta_value` longtext COLLATE utf8_unicode_ci
-) ENGINE=InnoDB AUTO_INCREMENT=900 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=904 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dump dei dati per la tabella `wp_postmeta`
@@ -579,14 +579,14 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (287, 61, 'point', 'a:3:{s:7:"address";s:52:"Piazza della Vittoria, 11B, 25122 Brescia BS, Italia";s:3:"lat";s:17:"45.53881886264556";s:3:"lng";s:18:"10.218500573471829";}'),
 (288, 61, '_point', 'field_5accd525d5290'),
 (289, 62, '_edit_last', '1'),
-(290, 62, '_edit_lock', '1524836419:1'),
+(290, 62, '_edit_lock', '1524917771:1'),
 (291, 62, '_wp_old_slug', 'piazza-p'),
-(292, 62, 'cinemagraph', '169'),
+(292, 62, 'cinemagraph', '10'),
 (293, 62, '_cinemagraph', 'field_5ab124a37cd09'),
 (294, 62, 'point', 'a:3:{s:7:"address";s:45:"Piazza Paolo VI, 21, 25121 Brescia BS, Italia";s:3:"lat";s:17:"45.53819676049664";s:3:"lng";s:18:"10.221068691401683";}'),
 (295, 62, '_point', 'field_5accd525d5290'),
 (296, 63, '_edit_last', '1'),
-(297, 63, '_edit_lock', '1524836404:1'),
+(297, 63, '_edit_lock', '1524917628:1'),
 (298, 63, 'cinemagraph', '10'),
 (299, 63, '_cinemagraph', 'field_5ab124a37cd09'),
 (300, 63, 'point', 'a:3:{s:7:"address";s:16:"Piazzale Arnaldo";s:3:"lat";s:10:"45.5363198";s:3:"lng";s:17:"10.23071040000002";}'),
@@ -836,9 +836,9 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (648, 125, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
 (649, 125, '_menu_item_xfn', ''),
 (650, 125, '_menu_item_url', ''),
-(652, 126, '_form', '[text* your-name placeholder "Nome*"]\n\n[email* your-email placeholder "E-mail*"]\n\n[textarea your-message placeholder "Messaggio*"]\n\n<label> *Campo obbligatorio </label>\n\n[acceptance acceptance-487] Autorizzo al trattamento dei dati come da Policy sotto riportata\n\n[submit "Invia"]'),
+(652, 126, '_form', '[text* your-name placeholder "Nome*"]\n\n[email* your-email placeholder "E-mail*"]\n\n[textarea* your-message placeholder "Messaggio*"]\n\n<label> *Campo obbligatorio </label>\n\n[acceptance acceptance-487] Autorizzo al trattamento dei dati come da<a href=""> Policy </a> sotto riportata\n\n[submit "Invia"]'),
 (653, 126, '_mail', 'a:9:{s:6:"active";b:1;s:7:"subject";s:16:""[your-subject]"";s:6:"sender";s:39:"[your-name] <lara.longinotti@gmail.com>";s:9:"recipient";s:25:"lara.longinotti@gmail.com";s:4:"body";s:127:"From: [your-name] | <[your-email]>\n\nMessaggio:\n[your-message]\n\n-- \nE-mail inviata dal from contatti del sito Scatta nel Passato";s:18:"additional_headers";s:22:"Reply-To: [your-email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}'),
-(654, 126, '_mail_2', 'a:9:{s:6:"active";b:1;s:7:"subject";s:57:"Scatta nel Passato - Risposta automatica "[your-subject]"";s:6:"sender";s:46:"Scatta nel Passato <lara.longinotti@gmail.com>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:166:"Questo è un messaggio automatico.\nGrazie per averci contattato! Ti risponderemo al più presto.\nBuona giornata\nStatta nel Passato\n\nIl tuo messaggio:\n"[your-message]"";s:18:"additional_headers";s:35:"Reply-To: lara.longinotti@gmail.com";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}'),
+(654, 126, '_mail_2', 'a:9:{s:6:"active";b:1;s:7:"subject";s:40:"Scatta nel Passato - Risposta automatica";s:6:"sender";s:46:"Scatta nel Passato <lara.longinotti@gmail.com>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:166:"Questo è un messaggio automatico.\nGrazie per averci contattato! Ti risponderemo al più presto.\nBuona giornata\nStatta nel Passato\n\nIl tuo messaggio:\n"[your-message]"";s:18:"additional_headers";s:35:"Reply-To: lara.longinotti@gmail.com";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}'),
 (655, 126, '_messages', 'a:23:{s:12:"mail_sent_ok";s:54:"Il suo messaggio è stato inviato con successo! Grazie";s:12:"mail_sent_ng";s:81:"C''è stato un errore nell''invio del suo messaggio. Per favore riprovi più tardi.";s:16:"validation_error";s:69:"Uno o più campi hanno un errore, si prega di verificare e riprovare.";s:4:"spam";s:96:"Si è verificato un errore nel tentativo di inviare il messaggio. Per favore riprovi più tardi.";s:12:"accept_terms";s:80:"È necessario accettare i termini e le condizioni prima di inviare il messaggio.";s:16:"invalid_required";s:25:"Il campo è obbligatorio.";s:16:"invalid_too_long";s:25:"Il campo è troppo lungo.";s:17:"invalid_too_short";s:25:"Il campo è troppo corto.";s:12:"invalid_date";s:38:"Il formato della data non è corretto.";s:14:"date_too_early";s:24:"La data è già passata.";s:13:"date_too_late";s:36:"La data supera il limite consentito.";s:13:"upload_failed";s:64:"Si è verificato un errore sconosciuto nel caricamento del file.";s:24:"upload_file_type_invalid";s:47:"Non è consentito caricare file di questo tipo.";s:21:"upload_file_too_large";s:26:"Il file è troppo pesante.";s:23:"upload_failed_php_error";s:59:"Si è verificato un errore durante il caricamento del file.";s:14:"invalid_number";s:36:"Il formato del numero non è valido.";s:16:"number_too_small";s:44:"Il numero è inferiore al minimo consentito.";s:16:"number_too_large";s:45:"Il numero è maggiore del massimo consentito.";s:23:"quiz_answer_not_correct";s:28:"La risposta non è corretta.";s:17:"captcha_not_match";s:31:"Your entered code is incorrect.";s:13:"invalid_email";s:42:"L''indirizzo E-mail inserito non è valido.";s:11:"invalid_url";s:20:"L''URL non è valido.";s:11:"invalid_tel";s:45:"Il numero di telefono inserito non è valido.";}'),
 (656, 126, '_additional_settings', 'acceptance_as_validation: on'),
 (657, 126, '_locale', 'en_US'),
@@ -1077,7 +1077,9 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (891, 165, '_wp_attached_file', '2018/04/logo-white.png'),
 (892, 165, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:918;s:6:"height";i:508;s:4:"file";s:22:"2018/04/logo-white.png";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:22:"logo-white-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:22:"logo-white-300x166.png";s:5:"width";i:300;s:6:"height";i:166;s:9:"mime-type";s:9:"image/png";}s:12:"medium_large";a:4:{s:4:"file";s:22:"logo-white-768x425.png";s:5:"width";i:768;s:6:"height";i:425;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}'),
 (898, 62, 'audio', ''),
-(899, 62, '_audio', 'field_5acd079b2c8e7');
+(899, 62, '_audio', 'field_5acd079b2c8e7'),
+(902, 63, 'audio', ''),
+(903, 63, '_audio', 'field_5acd079b2c8e7');
 
 -- --------------------------------------------------------
 
@@ -1109,7 +1111,7 @@ CREATE TABLE `wp_posts` (
   `post_type` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'post',
   `post_mime_type` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `comment_count` bigint(20) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=171 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=172 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dump dei dati per la tabella `wp_posts`
@@ -1122,7 +1124,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (6, 1, '2018-03-20 15:11:17', '2018-03-20 15:11:17', 'a:7:{s:8:"location";a:1:{i:0;a:1:{i:0;a:3:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:7:"content";}}}s:8:"position";s:6:"normal";s:5:"style";s:7:"default";s:15:"label_placement";s:3:"top";s:21:"instruction_placement";s:5:"label";s:14:"hide_on_screen";s:0:"";s:11:"description";s:0:"";}', 'Contents', 'contents', 'publish', 'closed', 'closed', '', 'group_5ab12404a4133', '', '', '2018-04-10 18:53:24', '2018-04-10 18:53:24', '', 0, 'http://localhost:8888/laba/trovacincitta/?post_type=acf-field-group&#038;p=6', 0, 'acf-field-group', '', 0),
 (7, 1, '2018-03-20 15:12:48', '2018-03-20 15:12:48', 'a:15:{s:4:"type";s:5:"image";s:12:"instructions";s:0:"";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"return_format";s:5:"array";s:12:"preview_size";s:9:"thumbnail";s:7:"library";s:3:"all";s:9:"min_width";s:0:"";s:10:"min_height";s:0:"";s:8:"min_size";s:0:"";s:9:"max_width";s:0:"";s:10:"max_height";s:0:"";s:8:"max_size";s:0:"";s:10:"mime_types";s:0:"";}', 'Cinemagraph', 'cinemagraph', 'publish', 'closed', 'closed', '', 'field_5ab124a37cd09', '', '', '2018-03-20 15:12:48', '2018-03-20 15:12:48', '', 6, 'http://localhost:8888/laba/trovacincitta/?post_type=acf-field&p=7', 0, 'acf-field', '', 0),
 (9, 1, '2018-03-20 15:21:47', '2018-03-20 15:21:47', '', 'Loggia', '', 'publish', 'closed', 'closed', '', 'loggia', '', '', '2018-04-10 18:32:46', '2018-04-10 18:32:46', '', 0, 'http://localhost:8888/laba/trovacincitta/?post_type=content&#038;p=9', 0, 'content', '', 0),
-(10, 1, '2018-03-20 15:21:27', '2018-03-20 15:21:27', '', 'IMG_4997', '', 'inherit', 'open', 'closed', '', 'img_4997', '', '', '2018-04-10 18:48:46', '2018-04-10 18:48:46', '', 9, 'http://localhost:8888/laba/trovacincitta/wp-content/uploads/2018/03/IMG_4997.jpg', 0, 'attachment', 'image/jpeg', 0),
+(10, 1, '2018-03-20 15:21:27', '2018-03-20 15:21:27', '', 'IMG_4997', '', 'inherit', 'open', 'closed', '', 'img_4997', '', '', '2018-04-28 12:13:55', '2018-04-28 12:13:55', '', 9, 'http://localhost:8888/laba/trovacincitta/wp-content/uploads/2018/03/IMG_4997.jpg', 0, 'attachment', 'image/jpeg', 0),
 (12, 1, '2018-04-10 15:16:21', '2018-04-10 15:16:21', 'a:9:{s:4:"type";s:10:"google_map";s:12:"instructions";s:0:"";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:10:"center_lat";s:0:"";s:10:"center_lng";s:0:"";s:4:"zoom";s:0:"";s:6:"height";s:0:"";}', 'Point', 'point', 'publish', 'closed', 'closed', '', 'field_5accd525d5290', '', '', '2018-04-10 18:53:24', '2018-04-10 18:53:24', '', 6, 'http://localhost:8888/laba/trovacincitta/?post_type=acf-field&#038;p=12', 2, 'acf-field', '', 0),
 (14, 1, '2018-04-10 15:44:06', '2018-04-10 15:44:06', '', 'Help Items', '', 'publish', 'closed', 'closed', '', 'help_item', '', '', '2018-04-10 15:44:29', '2018-04-10 15:44:29', '', 0, 'http://localhost:8888/laba/trovacincitta/?post_type=_pods_pod&#038;p=14', 0, '_pods_pod', '', 0),
 (16, 1, '2018-04-10 15:45:25', '2018-04-10 15:45:25', 'a:7:{s:8:"location";a:1:{i:0;a:1:{i:0;a:3:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:9:"help_item";}}}s:8:"position";s:6:"normal";s:5:"style";s:7:"default";s:15:"label_placement";s:3:"top";s:21:"instruction_placement";s:5:"label";s:14:"hide_on_screen";s:0:"";s:11:"description";s:0:"";}', 'Help Items', 'help-items', 'publish', 'closed', 'closed', '', 'group_5accdbf49e2e6', '', '', '2018-04-11 07:53:05', '2018-04-11 07:53:05', '', 0, 'http://localhost:8888/laba/trovacincitta/?post_type=acf-field-group&#038;p=16', 0, 'acf-field-group', '', 0),
@@ -1158,8 +1160,8 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (59, 1, '2018-04-10 18:34:23', '2018-04-10 18:34:23', '', 'Stazione', '', 'publish', 'closed', 'closed', '', 'stazione', '', '', '2018-04-10 18:34:23', '2018-04-10 18:34:23', '', 0, 'http://localhost:8888/trovacincitta/?post_type=content&#038;p=59', 0, 'content', '', 0),
 (60, 1, '2018-04-10 18:36:01', '2018-04-10 18:36:01', '', 'Piazza della Vittoria', '', 'publish', 'closed', 'closed', '', 'piazza-della-vittoria', '', '', '2018-04-10 18:36:01', '2018-04-10 18:36:01', '', 0, 'http://localhost:8888/trovacincitta/?post_type=content&#038;p=60', 0, 'content', '', 0),
 (61, 1, '2018-04-10 18:39:02', '2018-04-10 18:39:02', '', 'Metro Vittoria', '', 'publish', 'closed', 'closed', '', 'metro-vittoria', '', '', '2018-04-10 18:39:02', '2018-04-10 18:39:02', '', 0, 'http://localhost:8888/trovacincitta/?post_type=content&#038;p=61', 0, 'content', '', 0),
-(62, 1, '2018-04-10 18:41:47', '2018-04-10 18:41:47', '', 'Piazza Paolo VI', '', 'publish', 'closed', 'closed', '', 'piazza-paolo-vi', '', '', '2018-04-27 13:40:18', '2018-04-27 13:40:18', '', 0, 'http://localhost:8888/trovacincitta/?post_type=content&#038;p=62', 0, 'content', '', 0),
-(63, 1, '2018-04-10 18:49:09', '2018-04-10 18:49:09', '', 'Piazzale Arnaldo', '', 'publish', 'closed', 'closed', '', 'piazzale-arnaldo', '', '', '2018-04-10 18:49:09', '2018-04-10 18:49:09', '', 0, 'http://localhost:8888/trovacincitta/?post_type=content&#038;p=63', 0, 'content', '', 0),
+(62, 1, '2018-04-10 18:41:47', '2018-04-10 18:41:47', '', 'Piazza Paolo VI', '', 'publish', 'closed', 'closed', '', 'piazza-paolo-vi', '', '', '2018-04-28 12:13:57', '2018-04-28 12:13:57', '', 0, 'http://localhost:8888/trovacincitta/?post_type=content&#038;p=62', 0, 'content', '', 0),
+(63, 1, '2018-04-10 18:49:09', '2018-04-10 18:49:09', '', 'Piazzale Arnaldo', '', 'publish', 'closed', 'closed', '', 'piazzale-arnaldo', '', '', '2018-04-28 12:13:47', '2018-04-28 12:13:47', '', 0, 'http://localhost:8888/trovacincitta/?post_type=content&#038;p=63', 0, 'content', '', 0),
 (64, 1, '2018-04-10 18:53:24', '2018-04-10 18:53:24', 'a:10:{s:4:"type";s:4:"file";s:12:"instructions";s:0:"";s:8:"required";i:0;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"return_format";s:5:"array";s:7:"library";s:3:"all";s:8:"min_size";s:0:"";s:8:"max_size";s:0:"";s:10:"mime_types";s:0:"";}', 'Audio', 'audio', 'publish', 'closed', 'closed', '', 'field_5acd079b2c8e7', '', '', '2018-04-10 18:53:24', '2018-04-10 18:53:24', '', 6, 'http://localhost:8888/trovacincitta/?post_type=acf-field&p=64', 1, 'acf-field', '', 0),
 (65, 1, '2018-04-11 07:19:46', '2018-04-11 07:19:46', '<strong>Condividi</strong> quest''esperienza sui social e contribuisci ad invitare tutti i tuoi amici a provarla.', 'Condividi', '', 'inherit', 'closed', 'closed', '', '25-autosave-v1', '', '', '2018-04-11 07:19:46', '2018-04-11 07:19:46', '', 25, 'http://localhost:8888/trovacincitta/2018/04/11/25-autosave-v1/', 0, 'revision', '', 0),
 (66, 1, '2018-04-11 07:22:58', '2018-04-11 07:22:58', '<p style="text-align: center;">Divertiti a cercare le impronte sparse nel centro di Brescia. <strong>Dove ti porteranno?</strong></p>', 'Scatta nel passato', '', 'publish', 'closed', 'closed', '', 'scatta-nel-passato', '', '', '2018-04-24 12:39:08', '2018-04-24 12:39:08', '', 0, 'http://localhost:8888/trovacincitta/?post_type=help_item&#038;p=66', 0, 'help_item', '', 0),
@@ -1208,7 +1210,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (123, 1, '2018-04-17 15:18:21', '2018-04-17 15:18:21', '', 'Walkthrough', '', 'publish', 'closed', 'closed', '', 'walkthrough', '', '', '2018-04-17 15:18:21', '2018-04-17 15:18:21', '', 0, 'http://localhost:8888/laba/trovacincitta/?page_id=123', 0, 'page', '', 0),
 (124, 1, '2018-04-17 15:18:21', '2018-04-17 15:18:21', '', 'Walkthrough', '', 'inherit', 'closed', 'closed', '', '123-revision-v1', '', '', '2018-04-17 15:18:21', '2018-04-17 15:18:21', '', 123, 'http://localhost:8888/laba/trovacincitta/2018/04/17/123-revision-v1/', 0, 'revision', '', 0),
 (125, 1, '2018-04-17 15:34:32', '2018-04-17 15:34:32', ' ', '', '', 'publish', 'closed', 'closed', '', '125', '', '', '2018-04-17 15:34:32', '2018-04-17 15:34:32', '', 0, 'http://localhost:8888/laba/trovacincitta/?p=125', 2, 'nav_menu_item', '', 0),
-(126, 1, '2018-04-17 15:38:56', '2018-04-17 15:38:56', '[text* your-name placeholder "Nome*"]\r\n\r\n[email* your-email placeholder "E-mail*"]\r\n\r\n[textarea your-message placeholder "Messaggio*"]\r\n\r\n<label> *Campo obbligatorio </label>\r\n\r\n[acceptance acceptance-487] Autorizzo al trattamento dei dati come da Policy sotto riportata\r\n\r\n[submit "Invia"]\n1\n"[your-subject]"\n[your-name] <lara.longinotti@gmail.com>\nlara.longinotti@gmail.com\nFrom: [your-name] | <[your-email]>\r\n\r\nMessaggio:\r\n[your-message]\r\n\r\n-- \r\nE-mail inviata dal from contatti del sito Scatta nel Passato\nReply-To: [your-email]\n\n\n\n1\nScatta nel Passato - Risposta automatica "[your-subject]"\nScatta nel Passato <lara.longinotti@gmail.com>\n[your-email]\nQuesto è un messaggio automatico.\r\nGrazie per averci contattato! Ti risponderemo al più presto.\r\nBuona giornata\r\nStatta nel Passato\r\n\r\nIl tuo messaggio:\r\n"[your-message]"\nReply-To: lara.longinotti@gmail.com\n\n\n\nIl suo messaggio è stato inviato con successo! Grazie\nC''è stato un errore nell''invio del suo messaggio. Per favore riprovi più tardi.\nUno o più campi hanno un errore, si prega di verificare e riprovare.\nSi è verificato un errore nel tentativo di inviare il messaggio. Per favore riprovi più tardi.\nÈ necessario accettare i termini e le condizioni prima di inviare il messaggio.\nIl campo è obbligatorio.\nIl campo è troppo lungo.\nIl campo è troppo corto.\nIl formato della data non è corretto.\nLa data è già passata.\nLa data supera il limite consentito.\nSi è verificato un errore sconosciuto nel caricamento del file.\nNon è consentito caricare file di questo tipo.\nIl file è troppo pesante.\nSi è verificato un errore durante il caricamento del file.\nIl formato del numero non è valido.\nIl numero è inferiore al minimo consentito.\nIl numero è maggiore del massimo consentito.\nLa risposta non è corretta.\nYour entered code is incorrect.\nL''indirizzo E-mail inserito non è valido.\nL''URL non è valido.\nIl numero di telefono inserito non è valido.\nacceptance_as_validation: on', 'Contact form 1', '', 'publish', 'closed', 'closed', '', 'contact-form-1', '', '', '2018-04-28 10:22:02', '2018-04-28 10:22:02', '', 0, 'http://localhost:8888/laba/trovacincitta/?post_type=wpcf7_contact_form&#038;p=126', 0, 'wpcf7_contact_form', '', 0),
+(126, 1, '2018-04-17 15:38:56', '2018-04-17 15:38:56', '[text* your-name placeholder "Nome*"]\r\n\r\n[email* your-email placeholder "E-mail*"]\r\n\r\n[textarea* your-message placeholder "Messaggio*"]\r\n\r\n<label> *Campo obbligatorio </label>\r\n\r\n[acceptance acceptance-487] Autorizzo al trattamento dei dati come da<a href=""> Policy </a> sotto riportata\r\n\r\n[submit "Invia"]\n1\n"[your-subject]"\n[your-name] <lara.longinotti@gmail.com>\nlara.longinotti@gmail.com\nFrom: [your-name] | <[your-email]>\r\n\r\nMessaggio:\r\n[your-message]\r\n\r\n-- \r\nE-mail inviata dal from contatti del sito Scatta nel Passato\nReply-To: [your-email]\n\n\n\n1\nScatta nel Passato - Risposta automatica\nScatta nel Passato <lara.longinotti@gmail.com>\n[your-email]\nQuesto è un messaggio automatico.\r\nGrazie per averci contattato! Ti risponderemo al più presto.\r\nBuona giornata\r\nStatta nel Passato\r\n\r\nIl tuo messaggio:\r\n"[your-message]"\nReply-To: lara.longinotti@gmail.com\n\n\n\nIl suo messaggio è stato inviato con successo! Grazie\nC''è stato un errore nell''invio del suo messaggio. Per favore riprovi più tardi.\nUno o più campi hanno un errore, si prega di verificare e riprovare.\nSi è verificato un errore nel tentativo di inviare il messaggio. Per favore riprovi più tardi.\nÈ necessario accettare i termini e le condizioni prima di inviare il messaggio.\nIl campo è obbligatorio.\nIl campo è troppo lungo.\nIl campo è troppo corto.\nIl formato della data non è corretto.\nLa data è già passata.\nLa data supera il limite consentito.\nSi è verificato un errore sconosciuto nel caricamento del file.\nNon è consentito caricare file di questo tipo.\nIl file è troppo pesante.\nSi è verificato un errore durante il caricamento del file.\nIl formato del numero non è valido.\nIl numero è inferiore al minimo consentito.\nIl numero è maggiore del massimo consentito.\nLa risposta non è corretta.\nYour entered code is incorrect.\nL''indirizzo E-mail inserito non è valido.\nL''URL non è valido.\nIl numero di telefono inserito non è valido.\nacceptance_as_validation: on', 'Contact form 1', '', 'publish', 'closed', 'closed', '', 'contact-form-1', '', '', '2018-04-28 12:18:47', '2018-04-28 12:18:47', '', 0, 'http://localhost:8888/laba/trovacincitta/?post_type=wpcf7_contact_form&#038;p=126', 0, 'wpcf7_contact_form', '', 0),
 (127, 1, '2018-04-17 15:40:49', '2018-04-17 15:40:49', '[contact-form-7 id="126" title="Contact form 1"]', 'Contatti', '', 'inherit', 'closed', 'closed', '', '92-revision-v1', '', '', '2018-04-17 15:40:49', '2018-04-17 15:40:49', '', 92, 'http://localhost:8888/laba/trovacincitta/2018/04/17/92-revision-v1/', 0, 'revision', '', 0),
 (129, 1, '2018-04-18 07:09:46', '2018-04-18 07:09:46', '{\n    "blogname": {\n        "value": "Trovaci in citt\\u00e0",\n        "type": "option",\n        "user_id": 1,\n        "date_modified_gmt": "2018-04-18 07:09:46"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'df4a37d4-a094-453d-93c2-1c37d703b1b7', '', '', '2018-04-18 07:09:46', '2018-04-18 07:09:46', '', 0, 'http://localhost:8888/trovacincitta/2018/04/18/df4a37d4-a094-453d-93c2-1c37d703b1b7/', 0, 'customize_changeset', '', 0),
 (130, 1, '2018-04-18 08:18:09', '2018-04-18 08:18:09', '<h2><strong>In cosa consiste?</strong></h2>\nÈ un''esperienza tutta da scoprire. Immaginatevi un viaggio a ritroso nel tempo dove il lato <strong>vintage</strong> di Brescia e la <strong>fotografia</strong> si incontrano in una nuova versione <strong>digital</strong> e creativa.\nMa ancora non vogliamo rivelare troppo, quindi non ti resta che trovare tutti i punti in città e scoprire cosa ti aspetta.\n<h2><strong>Dove e come posso trovarli?</strong></h2>\nÈ molto semplice. Ti basterà seguire i percorsi segnalati sulla mappa. Tutti i punti si trovano nel centro di Brescia e sono facilmente raggiungibili tra loro facendo una passeggiata. Una volta sul posto, non potrai sbagliare: troverai delle <strong>impronte</strong> disegnate per terra e di fronte un <strong>totem</strong> illustrativo.\n<h2><strong>Cosa mi serve?</strong></h2>\nSemplicemente <strong>il tuo dispositivo</strong>, niente di più. Utilizzalo sia per arrivare ai vari punti, sia per visualizzare cosa rivelano. Basterà avvicinarti e scoprire cosa appare sul tuo schermo. Altrimenti digita l''indirizzo web che trovi sul totem o scannerizza il QR code.', 'Scatta nel passato', '', 'inherit', 'closed', 'closed', '', '80-autosave-v1', '', '', '2018-04-18 08:18:09', '2018-04-18 08:18:09', '', 80, 'http://localhost:8888/trovacincitta/2018/04/18/80-autosave-v1/', 0, 'revision', '', 0),
@@ -1536,7 +1538,7 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT per la tabella `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=793;
+  MODIFY `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=803;
 --
 -- AUTO_INCREMENT per la tabella `wp_podsrel`
 --
@@ -1546,12 +1548,12 @@ ALTER TABLE `wp_podsrel`
 -- AUTO_INCREMENT per la tabella `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=900;
+  MODIFY `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=904;
 --
 -- AUTO_INCREMENT per la tabella `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=171;
+  MODIFY `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=172;
 --
 -- AUTO_INCREMENT per la tabella `wp_termmeta`
 --
