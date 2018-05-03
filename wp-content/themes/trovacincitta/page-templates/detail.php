@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="bg"></div>
 				<div class="overlay">
 
-					<img src="http://localhost:8888/trovacincitta/wp-content/uploads/2018/04/logo-white.png" alt="">
+					<img src="http://scattanelpassato.it/wp-content/uploads/2018/04/logo-white.png" alt="">
 					<h3>15 Maggio - 30 settembre 2018 </h3>
 					<h3> Museo santa giulia - Brescia</h3>
 					<div id="fb-root"></div>
@@ -38,7 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							}(document, 'script', 'facebook-jssdk'));
 						</script>
 						<div data-href="https://www.scattanelpassato.it" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.scattanelpassato.it%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Condividi l'esperienza</a></div>
-					<a href="http://localhost:8888/trovacincitta">Scopri gli altri punti</a>
+					<a href="https://www.scattanelpassato.it/">Scopri gli altri punti</a>
 				</div>
 				<div id="detail">
 					<?php

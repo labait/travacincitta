@@ -1,0 +1,124 @@
+/* line 4, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+* {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* line 8, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section {
+  margin-bottom: 30px;
+}
+
+/* line 12, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#logo {
+  margin-top: 210px;
+  margin-bottom: 45px;
+}
+
+/* line 16, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#logo img {
+  max-width: auto;
+  max-height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 26, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* line 27, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#title h1 {
+  font-size: 2em;
+  line-height: 1.3em;
+}
+
+/* line 38, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#sponsor h4, section#social h4 {
+  text-align: center;
+}
+
+/* line 41, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#sponsor ul, section#social ul {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+/* line 46, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#sponsor ul li, section#social ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+/* line 51, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#sponsor ul li i, section#social ul li i {
+  line-height: 0.8em;
+  padding-right: 5px;
+  position: relative;
+  top: 5px;
+  font-size: 2em;
+}
+
+/* line 58, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#sponsor ul li a, section#social ul li a {
+  color: #666;
+  text-decoration: underline;
+}
+
+/* line 61, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#sponsor ul li a:hover, section#social ul li a:hover {
+  color: #fbba00;
+}
+
+/* line 64, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#sponsor ul li a > img, section#social ul li a > img {
+  display: block;
+  height: 50px;
+  width: auto;
+}
+
+/* line 78, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#sponsor .produced ul li:nth-child(1) a > img, section#social .produced ul li:nth-child(1) a > img {
+  width: 80px;
+  height: auto;
+}
+
+/* line 84, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#sponsor .collaboration ul li, section#social .collaboration ul li {
+  padding-top: 30px;
+}
+
+/* line 92, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+section#social ul li {
+  padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 101, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+  section#title h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* line 109, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+  section#logo {
+    margin-top: 75px;
+  }
+  /* line 111, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+  section#logo img {
+    height: 120px;
+  }
+  /* line 117, /Users/domenicodamato/Desktop/teaser/scss/style.scss */
+  section#title h1 {
+    font-size: 1.2em;
+  }
+}
+
+/*# sourceMappingURL=../css/style.map */

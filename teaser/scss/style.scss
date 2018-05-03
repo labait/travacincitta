@@ -1,0 +1,121 @@
+
+$spacer: 15px;
+
+* {
+  font-family: 'Roboto Slab', serif;
+}
+
+section {
+  margin-bottom: $spacer*2;
+}
+
+section#logo{
+  margin-top: $spacer*14;
+  margin-bottom: $spacer*3;
+
+  img {
+    max-width: auto;
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+section#title {
+  h1 {
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+  margin-bottom: $spacer*4;
+  text-align: center;
+}
+
+
+
+section#sponsor, section#social {
+  h4{
+    text-align: center;
+  }
+  ul{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: $spacer*2;
+    padding: 0;
+    li{
+      display: inline-block;
+      list-style-type: none;
+      padding: $spacer;
+      vertical-align: middle;
+      i {
+        line-height: 0.8em;
+        padding-right: $spacer/3;
+        position: relative;
+        top: 5px;
+        font-size: 2em;
+      }
+      a{
+        color: #666;
+        text-decoration: underline;
+        &:hover {
+          color: #fbba00;
+        }
+        & > img {
+          display: block;
+          height: 50px;
+          width: auto;
+        }
+
+      }
+
+
+    }
+  }
+
+  .produced ul{
+    //border: 1px solid red;
+    li:nth-child(1) a > img {
+      width:80px;
+      height:auto;
+    }
+  }
+  .collaboration ul {
+    li{
+      padding-top: $spacer*2;
+    }
+  }
+}
+
+section#social {
+  ul{
+    li{
+      padding: $spacer;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  section#title {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  section#logo{
+    margin-top: $spacer*5;
+    img {
+      height: 120px;
+    }
+  }
+
+  section#title {
+    h1 {
+      font-size: 1.2em;
+    }
+  }
+}
