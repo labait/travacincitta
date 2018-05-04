@@ -1,28 +1,30 @@
-body.page-template-walkthrough #walkthrough.slick .item {
-  height: 300px; }
-body.page-template-walkthrough #slide-title-h2 {
-  text-align: center;
-  font-family: "BebasNeueBold";
-  font-size: 40px;
-  color: #fbba00; }
-body.page-template-walkthrough .slide-img-container {
-  text-align: -webkit-center;
-  margin-top: 15px;
-  margin-bottom: 15px; }
-body.page-template-walkthrough .slide-img {
-  width: 180px; }
-body.page-template-walkthrough .button-start {
-  width: 160px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  border-radius: 30px;
-  margin-left: 50%;
-  left: -80px;
-  color: white; }
-body.page-template-walkthrough .page-walkthrough {
+body.page-template-walkthrough {
   font-size: 17px;
   font-family: "Open Sans", sans-serif; }
+  body.page-template-walkthrough #walkthrough.slick .item {
+    height: 300px; }
+  body.page-template-walkthrough #slide-title-h2 {
+    text-align: center;
+    font-family: "BebasNeueBold";
+    font-size: 40px;
+    color: #fbba00; }
+  body.page-template-walkthrough .slide-img-container {
+    text-align: -webkit-center;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  body.page-template-walkthrough .slide-img {
+    width: 180px; }
+  body.page-template-walkthrough .button-start {
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 30px;
+    margin-left: 50%;
+    left: -80px;
+    color: white; }
+  body.page-template-walkthrough .button-start:hover {
+    text-decoration: none; }
 
 body.page-template-map .acf-map {
   width: 100%;
@@ -46,6 +48,21 @@ body.page-template-chisiamo .box p {
   color: #424345;
   font-size: 17px;
   font-family: "Open Sans", sans-serif; }
+body.page-template-chisiamo .box ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  display: block;
+  left: 50%; }
+  body.page-template-chisiamo .box ul li {
+    position: relative;
+    float: left;
+    display: block;
+    right: 50%;
+    filter: grayscale(100%);
+    margin: 15px; }
+  body.page-template-chisiamo .box ul li:hover {
+    filter: none; }
 
 body.page-template-scattanelpassato h1 {
   color: #fbba00;
@@ -58,7 +75,8 @@ body.page-template-scattanelpassato .box ul {
   body.page-template-scattanelpassato .box ul li {
     width: 300px;
     margin: 15px;
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: middle; }
     body.page-template-scattanelpassato .box ul li h2 {
       color: #fbba00;
       font-size: 17px;
@@ -113,6 +131,37 @@ body.page-template-detail {
       margin-bottom: 15px; }
   body.page-template-detail #detail {
     height: 100vh; }
+
+body.page-template-bresciaphotofestival-eventi h1 {
+  color: #fbba00;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "BebasNeueBold";
+  text-align: center; }
+body.page-template-bresciaphotofestival-eventi h2 {
+  color: #fbba00;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "BebasNeueBold";
+  text-align: center; }
+body.page-template-bresciaphotofestival-eventi h3 {
+  font-size: 26.6666666667px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 15px; }
+body.page-template-bresciaphotofestival-eventi .box ul {
+  list-style-type: none;
+  padding: 0; }
+  body.page-template-bresciaphotofestival-eventi .box ul li {
+    display: inline-block;
+    width: 330px;
+    height: 230px;
+    color: #424345;
+    background: #f8f8f8;
+    margin: 15px;
+    padding: 15px;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    vertical-align: middle; }
 
 body.page-template-contact h1 {
   font-family: "BebasNeueBold";

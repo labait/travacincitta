@@ -25,9 +25,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="bg"></div>
 				<div class="overlay">
 
-					<img src="http://scattanelpassato.it/wp-content/uploads/2018/04/logo-white.png" alt="">
-					<h3>15 Maggio - 30 settembre 2018 </h3>
+					<img src="http://scattanelpassato.it/wp-content/uploads/2018/05/bresciaphotofestival_logonew.png" alt="">
+					<h3>15 Maggio - 2 Settembre 2018 </h3>
 					<h3> Museo santa giulia - Brescia</h3>
+					<h3>15 Maggio - 29 Luglio 2018 </h3>
+					<h3> Ma.Co.f. - Brescia</h3>
 					<div id="fb-root"></div>
 						<script>(function(d, s, id) {
 							var js, fjs = d.getElementsByTagName(s)[0];
