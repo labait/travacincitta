@@ -231,3 +231,23 @@ footer {
     padding: 7.5px 30px; }
 
 /*# sourceMappingURL=style.css.map */
+
+.bg-dark {
+    background-color: #f8f8f8 !important;
+}
+
+nav #navbarNavDropdown a {
+    color: #424345 !important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(220, 195, 195, 0.5) !important;
+}
+
+#main-menu > li{
+  text-align: center !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("../src/img/menu.png");
+}
