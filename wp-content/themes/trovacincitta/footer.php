@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
-							<p><a href="http://bresciaphotofestival.it" target=”_blank”>Brescia Photo Festival </a> - Progetto Scatta nel Passato</p>
+							<p><a href="http://bresciaphotofestival.it" target=”_blank”>Brescia Photo Festival </a> - Progetto Scatta nel Passato - <a href="http://www.bresciamusei.com/cookie-policy.html" target="_blank"> Privacy Policy </a></p>
 
 					</div><!-- .site-info -->
 
