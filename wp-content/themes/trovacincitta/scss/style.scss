@@ -52,6 +52,12 @@ footer{
     font-size: $font-size1/4;
     text-align: center;
   }
+  a{
+    color: $color2;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
 }
 
 #cookie-law-info-bar{

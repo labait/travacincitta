@@ -86,7 +86,8 @@ body.page-template-scattanelpassato h1 {
   color: #fbba00;
   text-transform: uppercase;
   font-size: 40px;
-  font-family: "BebasNeueBold"; }
+  font-family: "BebasNeueBold";
+  text-align: center; }
 body.page-template-scattanelpassato .box ul {
   list-style-type: none;
   padding: 0; }
@@ -236,6 +237,10 @@ footer {
     font-family: "Open Sans", sans-serif;
     font-size: 10px;
     text-align: center; }
+  footer a {
+    color: #424345; }
+  footer a:hover {
+    text-decoration: underline; }
 
 #cookie-law-info-bar {
   font-family: "Open Sans", sans-serif !important;
