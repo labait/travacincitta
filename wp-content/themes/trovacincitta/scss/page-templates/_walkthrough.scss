@@ -38,4 +38,26 @@ body.page-template-walkthrough {
   .button-start:hover{
     text-decoration: none;
   }
+
+  .btn_inizia{
+    display: none;
+    background-color: $color1;
+    width: 200px;
+    border-radius: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    a{
+      text-align: center;
+      color: white;
+      font-size: $font-size2;
+      font-family: $font2;
+      padding: $spacer/2 $spacer;
+      display: block;
+      margin-top: $spacer;
+      margin-bottom: $spacer;
+    }
+  }
+  .btn_inizia:hover{
+    text-decoration: none;
+  }
 }

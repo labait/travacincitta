@@ -41,6 +41,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php endwhile; wp_reset_query(); ?>
 					</div>
 				</main><!-- #main -->
+				<div class="btn_inizia">
+					<a href="http://scattanelpassato.it/"> Inizia </a>
+				</div>
+
 
 				<a href="http://scattanelpassato.it/" class="button-start" style="
 					display: block;
@@ -51,6 +55,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					color: #000000;
 					position: relative;
 				">Salta <i class="fas fa-angle-right"></i></i></a>
+
 
 			</div><!-- #primary -->
 

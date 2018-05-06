@@ -22,8 +22,12 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'slick-style-theme', get_stylesheet_directory_uri() . '/slick/slick-theme.css', array(), $the_theme->get( 'Version' ) );
     wp_enqueue_style( 'styles1', get_stylesheet_directory_uri() . '/css/style.css', array(), $the_theme->get( 'Version' ) );
 
+    wp_enqueue_style( 'font-awesome', get_stylesheet_directory_uri() . 'https://use.fontawesome.com/releases/v5.0.12/css/all.css', array(), $the_theme->get( 'Version' ) );
+
+
+
     wp_enqueue_script( 'jquery');
-	wp_enqueue_script( 'popper-scripts', get_template_directory_uri() . '/js/popper.min.js', array(), false);
+	  wp_enqueue_script( 'popper-scripts', get_template_directory_uri() . '/js/popper.min.js', array(), false);
     wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
     wp_enqueue_script( 'jquery.loading-scripts', get_stylesheet_directory_uri() . '/jquery.loading/jquery.loading.min.js', array(), $the_theme->get( 'Version' ), true );
     wp_enqueue_script( 'slick-scripts', get_stylesheet_directory_uri() . '/slick/slick.js', array(), $the_theme->get( 'Version' ), true );

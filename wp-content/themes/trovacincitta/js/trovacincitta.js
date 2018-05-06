@@ -34,5 +34,28 @@
           })
         }
     });
+
+    //btn walkthrough
+    $("#slick-slide-control04").click(function() {
+      $('.btn_inizia').show()
+      $('.button-start').hide()
+    })
+    $("#slick-slide-control00").click(function() {
+      $('.btn_inizia').hide()
+      $('.button-start').show()
+    })
+    $("#slick-slide-control01").click(function() {
+      $('.btn_inizia').hide()
+      $('.button-start').show()
+    })
+    $("#slick-slide-control02").click(function() {
+      $('.btn_inizia').hide()
+      $('.button-start').show()
+    })
+    $("#slick-slide-control03").click(function() {
+      $('.btn_inizia').hide()
+      $('.button-start').show()
+    })
+
   })
 })(jQuery)

@@ -42,6 +42,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div data-href="https://www.scattanelpassato.it" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.scattanelpassato.it%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Condividi l'esperienza</a></div>
 					<a href="https://www.scattanelpassato.it/">Scopri gli altri punti</a>
 				</div>
+
+				
 				<div id="detail">
 					<?php
 						$query = new WP_Query(
