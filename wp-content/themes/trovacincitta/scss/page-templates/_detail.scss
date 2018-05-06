@@ -1,5 +1,17 @@
 body.page-template-detail {
   background: $color1;
+  nav{
+    display: none;
+  }
+  .wrapper{
+    padding: 0;
+  }
+  .container{
+    margin: 0;
+  }
+  #primary{
+    margin: 0;
+  }
   .bg{
     display: none;
     position: absolute;
@@ -44,7 +56,8 @@ body.page-template-detail {
       margin-bottom: $spacer;
     }
   }
-  #detail{
+  img.cinemagraph {
     height: 100vh;
+    max-width: 2000px;
   }
 }

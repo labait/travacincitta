@@ -43,20 +43,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<a href="https://www.scattanelpassato.it/">Scopri gli altri punti</a>
 				</div>
 
-				
-				<div id="detail">
-					<?php
-						$query = new WP_Query(
-							array(
-								'post_type' => 'content',
-								'posts_per_page'	=> 1
-							)
-						);
-						while ( $query->have_posts() ) : $query->the_post();
-					?>
-						<?php get_template_part( 'loop-templates/content', 'content' ); ?>
-					<?php endwhile; wp_reset_query(); ?>
+				<div id="gyroViewer">
+					<div id="detail">
+						<?php
+							$query = new WP_Query(
+								array(
+									'post_type' => 'content',
+									'posts_per_page'	=> 1
+								)
+							);
+							while ( $query->have_posts() ) : $query->the_post();
+						?>
+							<?php get_template_part( 'loop-templates/content', 'content' ); ?>
+						<?php endwhile; wp_reset_query(); ?>
+					</div>
 				</div>
+
 
 
 			</div><!-- #primary -->

@@ -109,6 +109,14 @@ body.page-template-scattanelpassato .box ul {
 
 body.page-template-detail {
   background: #fbba00; }
+  body.page-template-detail nav {
+    display: none; }
+  body.page-template-detail .wrapper {
+    padding: 0; }
+  body.page-template-detail .container {
+    margin: 0; }
+  body.page-template-detail #primary {
+    margin: 0; }
   body.page-template-detail .bg {
     display: none;
     position: absolute;
@@ -148,8 +156,9 @@ body.page-template-detail {
       margin-right: auto;
       margin-top: 15px;
       margin-bottom: 15px; }
-  body.page-template-detail #detail {
-    height: 100vh; }
+  body.page-template-detail img.cinemagraph {
+    height: 100vh;
+    max-width: 2000px; }
 
 body.page-template-bresciaphotofestival-eventi h1 {
   color: #fbba00;
