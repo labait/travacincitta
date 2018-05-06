@@ -69,11 +69,12 @@ footer{
 }
 
 .bg-dark {
-    background-color: #f8f8f8 !important;
+    background-color: white !important;
 }
 
 nav #navbarNavDropdown a {
-    color: #424345 !important;
+  color: #424345 !important;
+  //display: none;
 }
 
 .navbar-dark .navbar-toggler {
@@ -85,5 +86,20 @@ nav #navbarNavDropdown a {
 }
 
 .navbar-dark .navbar-toggler-icon {
-    background-image: url("../src/img/menu.png");
+  background-image: url("../src/img/menu.png");
+}
+
+
+@media all and (max-width: 780px) {
+  .navbar-expand-md .navbar-toggler {
+  display: block;
+  }
+  #navbarNavDropdown {
+      background-color: $color1 !important;
+      // height: 100vh;
+      padding: $spacer;
+  }
+  nav #navbarNavDropdown a{
+      color: white !important;
+  }
 }

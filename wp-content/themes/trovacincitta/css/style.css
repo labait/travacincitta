@@ -231,7 +231,7 @@ footer {
     padding: 7.5px 30px; }
 
 .bg-dark {
-  background-color: #f8f8f8 !important; }
+  background-color: white !important; }
 
 nav #navbarNavDropdown a {
   color: #424345 !important; }
@@ -244,5 +244,16 @@ nav #navbarNavDropdown a {
 
 .navbar-dark .navbar-toggler-icon {
   background-image: url("../src/img/menu.png"); }
+
+@media all and (max-width: 780px) {
+  .navbar-expand-md .navbar-toggler {
+    display: block; }
+
+  #navbarNavDropdown {
+    background-color: #fbba00 !important;
+    padding: 15px; }
+
+  nav #navbarNavDropdown a {
+    color: white !important; } }
 
 /*# sourceMappingURL=style.css.map */
