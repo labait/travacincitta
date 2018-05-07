@@ -1,0 +1,58 @@
+$navbar_height: 60px;
+$footer_height: 60px;
+
+.wrapper {
+  padding: 0;
+}
+
+#full-width-page-wrapper {
+  min-height: calc(100vh - #{$navbar_height} - #{$footer_height});
+  > div {
+    min-height: inherit;  
+    > .row {
+      min-height: inherit;
+      > #primary {
+        min-height: inherit;
+        > #main {
+          min-height: inherit; 
+        }
+      }
+    }
+  } 
+}
+
+nav{
+  height: $navbar_height;
+  .navbar-brand{
+    width: 60px;
+    height: auto;
+  }
+  #navbarNavDropdown{
+    a{
+      color: white;
+      font-family: $font2;
+      text-transform: uppercase;
+      font-weight: lighter;
+      font-size: $font-size2;
+    }
+    a:hover{
+      font-weight:normal;
+    }
+  }
+}
+
+footer{
+  height: $footer_height;
+  bottom: 0px;
+  .site-info{
+    font-family: $font2;
+    font-size: $font-size1/4;
+    text-align: center;
+  }
+  a{
+    color: $color2;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
