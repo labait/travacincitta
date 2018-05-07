@@ -38,7 +38,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 <script type="text/javascript">
 (function($) {
 	var debug = true;
+	var template_path = "<?php print get_stylesheet_directory_uri(); ?>";
 	var map;
+	
 
 	function new_map( $el ) {
 		var $markers = $el.find('.marker');
@@ -50,25 +52,47 @@ $container = get_theme_mod( 'understrap_container_type' );
 		var map = new google.maps.Map( $el[0], args);
 		map.markers = [];
 		$markers.each(function(){
-				add_marker( $(this), map );		
+			add_marker( 
+				map,
+				$(this).attr('data-lat'),
+				$(this).attr('data-lng'),
+				$(this).html(),
+				"icon1"
+			);		
 		});
 		center_map( map );
 		getUserPosition(map);
 		return map;	
 	}
 
-	function add_marker( $marker, map ) {
-		var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
+	function add_marker( map, latitude, longitude, html, icon_name ) {
+		var icons = {
+			"icon1": {
+				url: template_path+'/img/marker1.png',
+				scaledSize: new google.maps.Size(27, 43), // scaled size
+				origin: new google.maps.Point(0,0), // origin
+				anchor: new google.maps.Point(0, 0) // anchor
+			},
+			"icon2": {
+				url: template_path+'/img/marker2.png',
+				scaledSize: new google.maps.Size(27, 43), // scaled size
+				origin: new google.maps.Point(0,0), // origin
+				anchor: new google.maps.Point(0, 0) // anchor
+			}
+		};
+		var icon = icons[icon_name];
+		
+		var latlng = new google.maps.LatLng( latitude, longitude );
 		var marker = new google.maps.Marker({
 			position: latlng,
-			map: map
+			map: map,
+			icon: icon
 		});
 		map.markers.push( marker );
 
-		if( $marker.html() )
-		{
+		if( html ){
 			var infowindow = new google.maps.InfoWindow({
-				content		: $marker.html()
+				content: html
 			});
 			google.maps.event.addListener(marker, 'click', function() {
 				infowindow.open( map, marker );
@@ -113,7 +137,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	}
 
 	function showUserPosition(map, pos){
-		map.setCenter(pos);
+		add_marker( map, pos.lat, pos.lng, "la tua positione", "icon2" )
+		center_map( map );
 		$('body').loading('stop');
 	}
 
@@ -154,10 +179,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 		});
 		var resizeId;
 		$(window).resize(function() {
-				clearTimeout(resizeId);
-				resizeId = setTimeout(function(){
-					setMapSize();
-				}, 500);
+			clearTimeout(resizeId);
+			resizeId = setTimeout(function(){
+				setMapSize();
+			}, 500);
 		});
 	});
 
