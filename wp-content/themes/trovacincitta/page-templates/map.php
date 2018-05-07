@@ -12,15 +12,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="wrapper" id="full-width-page-wrapper">
-
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
-
 		<div class="row">
-
 			<div class="col-md-12 content-area" id="primary">
-
 				<main class="site-main" id="main" role="main">
-
 						<div class="acf-map">
 							<?php
 								$query = new WP_Query( 
@@ -34,20 +29,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<?php get_template_part( 'loop-templates/content', 'content-map-item' ); ?>
 							<?php endwhile; wp_reset_query(); ?>
 						</div>
-
-
 				</main><!-- #main -->
-
 			</div><!-- #primary -->
-
 		</div><!-- .row end -->
-
 	</div><!-- Container end -->
-
 </div><!-- Wrapper end -->
 
 <script type="text/javascript">
 (function($) {
+	var debug = true;
+	var map;
+
 	function new_map( $el ) {
 		var $markers = $el.find('.marker');
 		var args = {
@@ -61,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				add_marker( $(this), map );		
 		});
 		center_map( map );
-		userPosition();
+		getUserPosition(map);
 		return map;	
 	}
 
@@ -84,8 +76,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 		}
 	}
 
-	function userPosition(){
-		infoWindow = new google.maps.InfoWindow;
+	function getUserPosition(map){
+		if(debug) {
+			var pos = { // fake position
+				lat: 45.559593,
+				lng: 10.2009603
+			};
+			showUserPosition(map, pos);
+			return;
+		}
+		//infoWindow = new google.maps.InfoWindow;
 		if (navigator.geolocation) {
 			$('body').loading({
 				message: 'Ricerca posizione...',
@@ -97,12 +97,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 					lat: position.coords.latitude,
 					lng: position.coords.longitude
 				};
-
-				infoWindow.setPosition(pos);
-				infoWindow.setContent('Location found.');
-				infoWindow.open(map);
-				map.setCenter(pos);
-				$('body').loading('stop');
+				//infoWindow.setPosition(pos);
+				//infoWindow.setContent('Location found.');
+				//infoWindow.open(map);
+				showUserPosition(map, pos);
+				
 			}, function() {
 				handleLocationError(true, infoWindow, map.getCenter());
 				$('body').loading('stop');
@@ -113,12 +112,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 		}
 	}
 
+	function showUserPosition(map, pos){
+		map.setCenter(pos);
+		$('body').loading('stop');
+	}
+
 	function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 		$('body').loading('stop');
 		infoWindow.setPosition(pos);
 		infoWindow.setContent(browserHasGeolocation ?
-													'Error: The Geolocation service failed.' :
-													'Error: Your browser doesn\'t support geolocation.');
+			'Error: The Geolocation service failed.' :
+			'Error: Your browser doesn\'t support geolocation.');
 		infoWindow.open(map);
 	}
 
@@ -128,25 +132,36 @@ $container = get_theme_mod( 'understrap_container_type' );
 			var latlng = new google.maps.LatLng( marker.position.lat(), marker.position.lng() );
 			bounds.extend( latlng );
 		});
-		if( map.markers.length == 1 )
-		{
+		if( map.markers.length == 1 ) {
 			map.setCenter( bounds.getCenter() );
 			map.setZoom( 16 );
-		}
-		else
-		{
+		} else{
 			map.fitBounds( bounds );
 		}
+	}
+
+	function setMapSize(){
+		$('.acf-map').each(function(){
+			$(this).height($(this).parent().height());
+		});
 	}
 
 	var map = null;
 	$(document).ready(function(){
 		$('.acf-map').each(function(){
 			map = new_map( $(this) );
+			setMapSize();
+		});
+		var resizeId;
+		$(window).resize(function() {
+				clearTimeout(resizeId);
+				resizeId = setTimeout(function(){
+					setMapSize();
+				}, 500);
 		});
 	});
 
-	})(jQuery);
-	</script>
+})(jQuery);
+</script>
 
 <?php get_footer(); ?>
