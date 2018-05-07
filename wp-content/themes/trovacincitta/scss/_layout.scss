@@ -22,21 +22,24 @@ $footer_height: 60px;
 }
 
 nav{
-  height: $navbar_height;
   .navbar-brand{
     width: 60px;
     height: auto;
   }
   #navbarNavDropdown{
     a{
-      color: white;
       font-family: $font2;
       text-transform: uppercase;
-      font-weight: lighter;
       font-size: $font-size2;
     }
     a:hover{
-      font-weight:normal;
+      text-decoration: underline;
+    }
+    li.active {
+      a {
+        font-weight: bold;
+        color: $color1;
+      }
     }
   }
 }
