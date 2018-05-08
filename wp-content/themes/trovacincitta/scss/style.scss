@@ -1,15 +1,12 @@
 @import 'variables';
-
 @import 'layout';
 
-@import 'page-templates/_template1.scss';
+@import 'page-templates/_page.scss';
 @import 'page-templates/_walkthrough.scss';
-@import 'page-templates/_map.scss';
 @import 'page-templates/_chisiamo.scss';
-@import 'page-templates/_scattanelpassato.scss';
-@import 'page-templates/_detail.scss';
-@import 'page-templates/_bresciaphotofestivalEventi.scss';
+@import 'page-templates/_single-content.scss';
 @import 'page-templates/_contact.scss';
+@import 'page-templates/_map.scss';
 
 @font-face {
   font-family: 'BebasNeueBold';
