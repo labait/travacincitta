@@ -1,11 +1,14 @@
 @import 'variables';
 
+@import 'layout';
+
 @import 'page-templates/_template1.scss';
 @import 'page-templates/_walkthrough.scss';
 @import 'page-templates/_map.scss';
 @import 'page-templates/_chisiamo.scss';
 @import 'page-templates/_scattanelpassato.scss';
 @import 'page-templates/_detail.scss';
+@import 'page-templates/_bresciaphotofestivalEventi.scss';
 @import 'page-templates/_contact.scss';
 
 @font-face {
@@ -25,24 +28,7 @@ a {
   color: $color1;
 }
 
-nav{
-  .navbar-brand{
-    width: 60px;
-    height: auto;
-  }
-  #navbarNavDropdown{
-    a{
-      color: white;
-      font-family: $font2;
-      text-transform: uppercase;
-      font-weight: lighter;
-      font-size: $font-size2;
-    }
-    a:hover{
-      font-weight:normal;
-    }
-  }
-}
+
 
 #cookie-law-info-bar{
   font-family: $font2 !important;
@@ -54,7 +40,7 @@ nav{
     box-shadow: none;
     text-shadow: none;
     border-radius: 25em;
-    float: right;
     padding:$spacer/2 $spacer*2;
   }
 }
+

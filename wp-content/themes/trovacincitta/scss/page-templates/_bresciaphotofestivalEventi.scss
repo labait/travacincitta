@@ -1,0 +1,37 @@
+body.page-template-bresciaphotofestival-eventi {
+    h1{
+      color: $color1;
+      text-transform: uppercase;
+      font-size: $font-size1;
+      font-family: $font1;
+      text-align: center;
+    }
+    h2{
+      color: $color1;
+      text-transform: uppercase;
+      font-size: $font-size1;
+      font-family: $font1;
+      text-align: center;
+    }
+    h3{
+      font-size: $font-size1/1.5;
+      font-family: $font2;
+      margin-left: $spacer;
+    }
+    .box ul{
+      list-style-type: none;
+      padding: 0;
+      li{
+        display: inline-block;
+        width: 330px;
+        height: 230px;
+        color: $color2;
+        background: $color3;
+        margin: $spacer;
+        padding: $spacer;
+        font-size: $font-size2;
+        font-family: $font2;
+        vertical-align: middle;
+      }
+    }
+}

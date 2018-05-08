@@ -1,4 +1,6 @@
 body.page-template-walkthrough {
+  font-size: $font-size2;
+  font-family: $font2;
 
   #walkthrough.slick {
     .item {
@@ -7,37 +9,55 @@ body.page-template-walkthrough {
   }
 
   #slide-title-h2{
-  text-align: center;
-  font-family: "BebasNeueBold";
-  font-size: $font-size1;
-  color: $color1;
-}
+    text-align: center;
+    font-family: "BebasNeueBold";
+    font-size: $font-size1;
+    color: $color1;
+  }
 
   .slide-img-container{
-  text-align: -webkit-center;
-  margin-top: $spacer;
-  margin-bottom: $spacer;
-}
+    text-align: -webkit-center;
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+  }
 
-.slide-img{
-  width: 180px;
-}
+  .slide-img{
+    width: 180px;
+  }
 
-.button-start{
-  width: 160px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  border-radius: 30px;
-  margin-left: 50%;
-  left: -80px;
-  color: white;
-}
+  .button-start{
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 30px;
+    margin-left: 50%;
+    left: -80px;
+    color: white;
+  }
+  .button-start:hover{
+    text-decoration: none;
+  }
 
-.page-walkthrough{
-  font-size: $font-size2;
-  font-family: $font2 }
-
-
-
+  .btn_inizia{
+    display: none;
+    background-color: $color1;
+    width: 200px;
+    border-radius: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    a{
+      text-align: center;
+      color: white;
+      font-size: $font-size2;
+      font-family: $font2;
+      padding: $spacer/2 $spacer;
+      display: block;
+      margin-top: $spacer;
+      margin-bottom: $spacer;
+    }
+  }
+  .btn_inizia:hover{
+    text-decoration: none;
+  }
 }

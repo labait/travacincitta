@@ -4,6 +4,7 @@ body.page-template-scattanelpassato {
       text-transform: uppercase;
       font-size: $font-size1;
       font-family: $font1;
+      text-align: center;
     }
     .box ul{
       list-style-type: none;
@@ -12,9 +13,10 @@ body.page-template-scattanelpassato {
         width: 300px;
         margin: $spacer;
         display: inline-block;
+        vertical-align: middle;
         h2{
           color: $color1;
-          font-size: 17px;
+          font-size: $font-size2;
           font-family: $font2;
         }
         p{

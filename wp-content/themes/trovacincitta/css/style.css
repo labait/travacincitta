@@ -1,33 +1,90 @@
-body.page-template-walkthrough #walkthrough.slick .item {
-  height: 300px; }
-body.page-template-walkthrough #slide-title-h2 {
-  text-align: center;
-  font-family: "BebasNeueBold";
-  font-size: 40px;
+.wrapper {
+  padding: 0; }
+
+#full-width-page-wrapper {
+  min-height: calc(100vh - 60px - 60px); }
+  #full-width-page-wrapper > div {
+    min-height: inherit; }
+    #full-width-page-wrapper > div > .row {
+      min-height: inherit; }
+      #full-width-page-wrapper > div > .row > #primary {
+        min-height: inherit; }
+        #full-width-page-wrapper > div > .row > #primary > #main {
+          min-height: inherit; }
+
+nav .navbar-brand {
+  width: 60px;
+  height: auto; }
+nav #navbarNavDropdown a {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 17px; }
+nav #navbarNavDropdown a:hover {
+  text-decoration: underline; }
+nav #navbarNavDropdown li.active a {
+  font-weight: bold;
   color: #fbba00; }
-body.page-template-walkthrough .slide-img-container {
-  text-align: -webkit-center;
-  margin-top: 15px;
-  margin-bottom: 15px; }
-body.page-template-walkthrough .slide-img {
-  width: 180px; }
-body.page-template-walkthrough .button-start {
-  width: 160px;
+
+footer {
   height: 60px;
-  line-height: 60px;
-  text-align: center;
-  border-radius: 30px;
-  margin-left: 50%;
-  left: -80px;
-  color: white; }
-body.page-template-walkthrough .page-walkthrough {
+  bottom: 0px; }
+  footer .site-info {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    text-align: center; }
+  footer a {
+    color: #424345; }
+  footer a:hover {
+    text-decoration: underline; }
+
+body.page-template-walkthrough {
   font-size: 17px;
   font-family: "Open Sans", sans-serif; }
+  body.page-template-walkthrough #walkthrough.slick .item {
+    height: 300px; }
+  body.page-template-walkthrough #slide-title-h2 {
+    text-align: center;
+    font-family: "BebasNeueBold";
+    font-size: 40px;
+    color: #fbba00; }
+  body.page-template-walkthrough .slide-img-container {
+    text-align: -webkit-center;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  body.page-template-walkthrough .slide-img {
+    width: 180px; }
+  body.page-template-walkthrough .button-start {
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 30px;
+    margin-left: 50%;
+    left: -80px;
+    color: white; }
+  body.page-template-walkthrough .button-start:hover {
+    text-decoration: none; }
+  body.page-template-walkthrough .btn_inizia {
+    display: none;
+    background-color: #fbba00;
+    width: 200px;
+    border-radius: 25em;
+    margin-left: auto;
+    margin-right: auto; }
+    body.page-template-walkthrough .btn_inizia a {
+      text-align: center;
+      color: white;
+      font-size: 17px;
+      font-family: "Open Sans", sans-serif;
+      padding: 7.5px 15px;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+  body.page-template-walkthrough .btn_inizia:hover {
+    text-decoration: none; }
 
 body.page-template-map .acf-map {
-  width: 100%;
-  height: 300px;
-  border: 1px solid red; }
+  width: 100%; }
 
 body.page-template-chisiamo .box h1 {
   text-align: center;
@@ -46,19 +103,36 @@ body.page-template-chisiamo .box p {
   color: #424345;
   font-size: 17px;
   font-family: "Open Sans", sans-serif; }
+body.page-template-chisiamo .box ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  display: block;
+  left: 50%; }
+  body.page-template-chisiamo .box ul li {
+    position: relative;
+    float: left;
+    display: block;
+    right: 50%;
+    filter: grayscale(100%);
+    margin: 15px; }
+  body.page-template-chisiamo .box ul li:hover {
+    filter: none; }
 
 body.page-template-scattanelpassato h1 {
   color: #fbba00;
   text-transform: uppercase;
   font-size: 40px;
-  font-family: "BebasNeueBold"; }
+  font-family: "BebasNeueBold";
+  text-align: center; }
 body.page-template-scattanelpassato .box ul {
   list-style-type: none;
   padding: 0; }
   body.page-template-scattanelpassato .box ul li {
     width: 300px;
     margin: 15px;
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: middle; }
     body.page-template-scattanelpassato .box ul li h2 {
       color: #fbba00;
       font-size: 17px;
@@ -72,6 +146,14 @@ body.page-template-scattanelpassato .box ul {
 
 body.page-template-detail {
   background: #fbba00; }
+  body.page-template-detail nav {
+    display: none; }
+  body.page-template-detail .wrapper {
+    padding: 0; }
+  body.page-template-detail .container {
+    margin: 0; }
+  body.page-template-detail #primary {
+    margin: 0; }
   body.page-template-detail .bg {
     display: none;
     position: absolute;
@@ -111,6 +193,40 @@ body.page-template-detail {
       margin-right: auto;
       margin-top: 15px;
       margin-bottom: 15px; }
+  body.page-template-detail img.cinemagraph {
+    height: 100vh;
+    max-width: 2000px; }
+
+body.page-template-bresciaphotofestival-eventi h1 {
+  color: #fbba00;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "BebasNeueBold";
+  text-align: center; }
+body.page-template-bresciaphotofestival-eventi h2 {
+  color: #fbba00;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "BebasNeueBold";
+  text-align: center; }
+body.page-template-bresciaphotofestival-eventi h3 {
+  font-size: 26.6666666667px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 15px; }
+body.page-template-bresciaphotofestival-eventi .box ul {
+  list-style-type: none;
+  padding: 0; }
+  body.page-template-bresciaphotofestival-eventi .box ul li {
+    display: inline-block;
+    width: 330px;
+    height: 230px;
+    color: #424345;
+    background: #f8f8f8;
+    margin: 15px;
+    padding: 15px;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    vertical-align: middle; }
 
 body.page-template-contact h1 {
   font-family: "BebasNeueBold";
@@ -119,12 +235,16 @@ body.page-template-contact h1 {
   font-size: 40px;
   text-align: center; }
 body.page-template-contact form.wpcf7-form p span.wpcf7-form-control-wrap input, body.page-template-contact form.wpcf7-form p span.wpcf7-form-control-wrap textarea {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  font-family: "Open Sans", sans-serif; }
 body.page-template-contact .wpcf7 input, body.page-template-contact .wpcf7 textarea {
-  border: 0px;
-  border-radius: 0; }
-body.page-template-contact label {
-  font-size: 13px; }
+  border: none;
+  border-radius: 0;
+  font-family: "Open Sans", sans-serif; }
+body.page-template-contact label, body.page-template-contact .wpcf7-form p {
+  font-size: 10px; }
+body.page-template-contact .wpcf7-list-item {
+  margin: 0; }
 body.page-template-contact .wpcf7 input[type=submit] {
   background: #fbba00;
   border-radius: 25em;
@@ -145,18 +265,6 @@ h1, h2, h3, h4, h5, h6,
 a {
   color: #fbba00; }
 
-nav .navbar-brand {
-  width: 60px;
-  height: auto; }
-nav #navbarNavDropdown a {
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: lighter;
-  font-size: 17px; }
-nav #navbarNavDropdown a:hover {
-  font-weight: normal; }
-
 #cookie-law-info-bar {
   font-family: "Open Sans", sans-serif !important;
   padding: 15px; }
@@ -166,7 +274,6 @@ nav #navbarNavDropdown a:hover {
     box-shadow: none;
     text-shadow: none;
     border-radius: 25em;
-    float: right;
     padding: 7.5px 30px; }
 
 /*# sourceMappingURL=style.css.map */

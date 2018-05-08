@@ -8,13 +8,18 @@ body.page-template-contact {
   }
   form.wpcf7-form p span.wpcf7-form-control-wrap input, form.wpcf7-form p span.wpcf7-form-control-wrap textarea{
     background-color: $color3;
+    font-family: $font2;
   }
   .wpcf7 input, .wpcf7 textarea{
-    border: 0px;
+    border: none;
     border-radius: 0;
+    font-family: $font2;
   }
-  label{
-    font-size: 13px;
+  label, .wpcf7-form p{
+    font-size: $font-size1/4;
+  }
+  .wpcf7-list-item{
+    margin: 0;
   }
   .wpcf7 input[type=submit]{
     background: $color1;

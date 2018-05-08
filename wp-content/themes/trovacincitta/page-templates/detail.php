@@ -24,9 +24,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</main><!-- #main -->
 				<div class="bg"></div>
 				<div class="overlay">
-					<img src="http://localhost:8888/trovacincitta/wp-content/uploads/2018/04/logo-white.png" alt="">
-					<h3>15 Maggio - 30 settembre 2018 </h3>
+
+					<img src="http://scattanelpassato.it/wp-content/uploads/2018/05/bresciaphotofestival_logonew.png" alt="">
+					<h3>15 Maggio - 2 Settembre 2018 </h3>
 					<h3> Museo santa giulia - Brescia</h3>
+					<h3>15 Maggio - 29 Luglio 2018 </h3>
+					<h3> Ma.Co.f. - Brescia</h3>
 					<div id="fb-root"></div>
 						<script>(function(d, s, id) {
 							var js, fjs = d.getElementsByTagName(s)[0];
@@ -37,21 +40,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 							}(document, 'script', 'facebook-jssdk'));
 						</script>
 						<div data-href="https://www.scattanelpassato.it" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.scattanelpassato.it%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Condividi l'esperienza</a></div>
-					<a href="http://localhost:8888/trovacincitta">Scopri gli altri punti</a>
+					<a href="https://www.scattanelpassato.it/">Scopri gli altri punti</a>
 				</div>
-				<div id="detail">
-					<?php
-						$query = new WP_Query(
-							array(
-								'post_type' => 'content',
-								'posts_per_page'	=> 1
-							)
-						);
-						while ( $query->have_posts() ) : $query->the_post();
-					?>
-						<?php get_template_part( 'loop-templates/content', 'content' ); ?>
-					<?php endwhile; wp_reset_query(); ?>
+
+				<div id="gyroViewer">
+					<div id="detail">
+						<?php
+							$query = new WP_Query(
+								array(
+									'post_type' => 'content',
+									'posts_per_page'	=> 1
+								)
+							);
+							while ( $query->have_posts() ) : $query->the_post();
+						?>
+							<?php get_template_part( 'loop-templates/content', 'content' ); ?>
+						<?php endwhile; wp_reset_query(); ?>
+					</div>
 				</div>
+
 
 
 			</div><!-- #primary -->
