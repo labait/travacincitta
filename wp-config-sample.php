@@ -1,4 +1,15 @@
 <?php
+
+$config_local = __DIR__."/wp-config.local.php";
+if(isset($_GET['test'])) {
+	print $config_local." exists? ".file_exists($config_local);
+	exit;
+}
+if(file_exists($config_local)) {
+	require($config_local);
+	return;
+}
+
 /**
  * The base configuration for WordPress
  *
