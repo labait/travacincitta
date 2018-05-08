@@ -40,8 +40,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	var redirect_url_if_not_in_distance_treshold =  "<?php print get_post_permalink(123); ?>";
 
 	(function ($) {
-  var debug = false;
-  var distance_treshold = 0.1 //km
+  var debug = true;
+  var distance_treshold = 0.2 //km
   var map;
 
   function new_map($el) {
@@ -111,10 +111,10 @@ $container = get_theme_mod( 'understrap_container_type' );
         lat: 45.559593,
         lng: 10.2009603
       };
-      // pos = { // posto fighetto da aperitivi aka piazza arnaldo
-      // 	lat: 45.5363198,
-      // 	lng: 10.2285164
-      // }
+      pos = { // posto fighetto da aperitivi aka piazza arnaldo
+      	lat: 45.5363198,
+      	lng: 10.2285164
+      }
       showUserPosition(map, pos);
       return;
     }
