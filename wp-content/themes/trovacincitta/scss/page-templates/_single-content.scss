@@ -1,11 +1,29 @@
-#cinemagraph{
-  position: absolute;
-  left: 0; 
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: scroll;
-  > img {
+body.single-content {
 
+  #wrapper-navbar,
+  #wrapper-footer,
+  #cookie-law-info-again {
+    display: none;
+  }
+
+  #close-button {
+    position: fixed;
+    right: $spacer*3;
+    top: $spacer;
+    a {
+      font-size: 4em;
+    }
+  }
+
+  #cinemagraph{
+    position: absolute;
+    left: 0; 
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    > img {
+
+    }
   }
 }

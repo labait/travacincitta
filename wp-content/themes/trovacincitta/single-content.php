@@ -16,6 +16,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php $cinemagraph = get_field('cinemagraph'); ?>
 		<?php if( $cinemagraph ): ?>
 			<div id="cinemagraph">
+				<div id="close-button">
+					<a href="<?php print home_url(); ?>">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</a>
+				</div>
 				<img src="<?php echo $cinemagraph['url']; ?>" alt="<?php echo $cinemagraph['alt']; ?>" />
 			</div>
 			<?php

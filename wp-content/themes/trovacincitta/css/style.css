@@ -128,7 +128,17 @@ body.page-template-chisiamo .box ul li {
 body.page-template-chisiamo .box ul li:hover {
   filter: none; }
 
-#cinemagraph {
+body.single-content #wrapper-navbar,
+body.single-content #wrapper-footer,
+body.single-content #cookie-law-info-again {
+  display: none; }
+body.single-content #close-button {
+  position: fixed;
+  right: 45px;
+  top: 15px; }
+  body.single-content #close-button a {
+    font-size: 4em; }
+body.single-content #cinemagraph {
   position: absolute;
   left: 0;
   top: 0;
@@ -162,6 +172,8 @@ body.page-template-contact .wpcf7 input[type=submit] {
 
 body.page-template-map .acf-map {
   width: 100%; }
+body.page-template-map .gm-style-iw h4 a {
+  color: #424345; }
 body.page-template-map #full-width-page-wrapper {
   min-height: calc(100vh - 60px - 60px); }
   body.page-template-map #full-width-page-wrapper > div {
