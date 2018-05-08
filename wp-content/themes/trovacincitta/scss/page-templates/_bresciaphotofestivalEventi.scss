@@ -1,37 +1,32 @@
-body.page-template-bresciaphotofestival-eventi {
-    h1{
-      color: $color1;
-      text-transform: uppercase;
-      font-size: $font-size1;
-      font-family: $font1;
-      text-align: center;
-    }
-    h2{
-      color: $color1;
-      text-transform: uppercase;
-      font-size: $font-size1;
-      font-family: $font1;
-      text-align: center;
-    }
-    h3{
-      font-size: $font-size1/1.5;
+body.page-template-bresciaphotofestival-eventi, body.page-template-scattanelpassato {
+    h3, .location{
+      color: $color2;
+      font-size: $font-size1/2;
       font-family: $font2;
-      margin-left: $spacer;
+      font-weight: bold;
     }
-    .box ul{
-      list-style-type: none;
-      padding: 0;
-      li{
-        display: inline-block;
-        width: 330px;
-        height: 230px;
-        color: $color2;
-        background: $color3;
-        margin: $spacer;
-        padding: $spacer;
-        font-size: $font-size2;
-        font-family: $font2;
-        vertical-align: middle;
-      }
+    h4{
+      color: $color2;
+      font-size: $font-size2;
+      font-family: $font2;
+      font-style: italic; 
+    }
+    .item{  
+      border: $spacer solid white;
+      color: $color2;
+      background: $color3;
+      padding: $spacer;
+      font-size: $font-size2;
+      font-family: $font2;
+    }
+    h1{
+      font-family: $font1;
+      color: $color1;
+      text-transform: uppercase;
+      font-size: $font-size1;
+      text-align: center;
+    }
+    .location{
+      margin-top: $spacer*2;
     }
 }
