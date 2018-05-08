@@ -9,21 +9,7 @@ h1{
   padding: 0;
 }
 
-#full-width-page-wrapper {
-  min-height: calc(100vh - #{$navbar_height} - #{$footer_height});
-  > div {
-    min-height: inherit;
-    > .row {
-      min-height: inherit;
-      > #primary {
-        min-height: inherit;
-        > #main {
-          min-height: inherit;
-        }
-      }
-    }
-  }
-}
+
 
 nav{
   #navbarNavDropdown{
