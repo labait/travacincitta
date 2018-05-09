@@ -107,9 +107,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 							if(show_info) {
 								setTimeout(function(){
 									$('#close-button a').css('color', 'white');
-									$('#audio-button a').css('color', 'white');
+									$('#audio-button a').css('opacity', '0');
+									$("#bg").show();
 									$info.show();
-								}, (debug ? 1000 : 8000))			
+								}, (debug ? 4000 : 8000))			
 							}
 
 

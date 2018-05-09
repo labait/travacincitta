@@ -58,9 +58,15 @@
   //})
 
 
-  $('#walkthrough').on('atferChange', function(event, slick, currentSlide, nextSlide){
-    alert("nextSlide");
-  });
+  $('#walkthrough').on('atferChange', function(event, slick, currentSlide){
+    var $control04 = $('#slick-slide04');
+    if($control04.hasClass("slick-active")){
+     $('.btn_inizia').show();
+     $('.button-start').hide();
+      } else {
+      $('.btn_inizia').hide();
+      $('.button-start').show();
+  }});
 
   })
 })(jQuery)

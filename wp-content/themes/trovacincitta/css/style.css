@@ -157,6 +157,7 @@ body.single-content #cinemagraph {
   overflow: scroll;
   z-index: 100; }
 body.single-content #bg {
+  display: none;
   width: 100vw;
   height: 100vh;
   background-color: #fbba00;
