@@ -42,28 +42,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</main><!-- #main -->
 				
-				<div class="btn_inizia">
+				<div class="button-start">
 					<a href="<?php print home_url(); ?>"> Inizia </a>
 				</div>
 
-				
-				<a href="<?php print home_url(); ?>" class="button-start" style="
-					display: block;
-					width: 160px;
-					text-align: center;
-					margin-left: 50%;
-					left: -80px;
-					color: #000000;
-					position: relative;
-				">Salta <i class="fas fa-angle-right"></i></i></a>
-
+			
+				<a href="<?php print home_url(); ?>" class="button-skip">Salta <i class="fas fa-angle-right"></i></a>
 
 			</div><!-- #primary -->
-
 		</div><!-- .row end -->
-
 	</div><!-- Container end -->
-
 </div><!-- Wrapper end -->
-
 <?php get_footer(); ?>

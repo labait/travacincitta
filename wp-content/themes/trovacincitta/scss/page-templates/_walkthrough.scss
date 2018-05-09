@@ -23,21 +23,20 @@ body.page-template-walkthrough {
     width: 180px;
   }
 
-  .button-start{
-    width: 160px;
+  .button-skip{
     height: 60px;
     line-height: 60px;
     text-align: center;
-    border-radius: 30px;
-    margin-left: 50%;
-    left: -80px;
-    color: white;
-  }
-  .button-start:hover{
-    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #000000;
+
+    &:hover{
+      text-decoration: none;
+    }
   }
 
-  .btn_inizia{
+  .button-start{
     display: none;
     background-color: $color1;
     width: 200px;
@@ -55,7 +54,7 @@ body.page-template-walkthrough {
       margin-bottom: $spacer;
     }
   }
-  .btn_inizia:hover{
+  .button-start:hover{
     text-decoration: none;
   }
 }
