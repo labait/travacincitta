@@ -28,8 +28,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<i class="fa fa-volume-up" aria-hidden="true"></i>
 				</a>
 			</div>
+			<div id="bg"></div>
 			<div id="info">
-
+				<img src="http://localhost:8888/trovacincitta/wp-content/uploads/2018/05/bresciaphotofestival_logonew-1.png" alt="">
+				<h3>15 Maggio - 2 Settembre 2018 </h3>
+				<h3> Museo santa giulia - Brescia</h3>
+				<h3>15 Maggio - 29 Luglio 2018 </h3>
+				<h3> Ma.Co.f. - Brescia</h3>
+				<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+						js = d.createElement(s); js.id = id;
+						js.src = 'https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.12';
+						fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));
+					</script>
+				<div data-href="https://www.scattanelpassato.it" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.scattanelpassato.it%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Condividi l'esperienza</a></div>
+				<a href="https://www.scattanelpassato.it/">Scopri gli altri punti</a>
 			</div>
 			<div id="cinemagraph">
 				<img src="<?php echo $cinemagraph['url']; ?>" alt="<?php echo $cinemagraph['alt']; ?>" />
@@ -41,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				(function($){
 					$(document).ready(function(){
 						var debug = true;
-						var show_info = false;
+						var show_info = true;
 						var show_cinemagraph = true;
 						
 						var audio = new Audio("<?php echo $audio['url']; ?>");
@@ -90,8 +106,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 							// info
 							if(show_info) {
 								setTimeout(function(){
+									$('#close-button a').css('color', 'white');
+									$('#audio-button a').css('opacity', '0');
+									$("#bg").show();
 									$info.show();
-								}, (debug ? 1000 : 8000))			
+								}, (debug ? 4000 : 8000))			
 							}
 
 

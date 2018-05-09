@@ -11,8 +11,8 @@ body.single-content {
   #audio-button {
     position: fixed;
     a {
-      color: white;
-      font-size: 4em;
+      color: $color1;
+      font-size: 3.5em;
     }
     
   }
@@ -20,13 +20,13 @@ body.single-content {
   #close-button {
     right: $spacer*3;
     top: $spacer;
-    z-index: 102;
+    z-index: 103;
   }
 
   #audio-button {
-    right: $spacer*9;
+    left: $spacer*3;
     top: $spacer;
-    z-index: 103;
+    z-index: 104;
   }
 
 
@@ -42,15 +42,54 @@ body.single-content {
 
     }
   }
-
-  #info {
+  #bg{
     display: none;
-    position: absolute;
-    left: 0; 
-    top: 0;
-    z-index: 101;
     width: 100vw;
     height: 100vh;
     background-color: $color1;
+    opacity: 0.9;
+    z-index: 101;
+    position: absolute;
+  }
+  #info {
+    display: none;
+    position: absolute;
+    left: 50%; 
+    top: 25%;
+    transform: translate(-50%, -50%);
+    -ms-transform:translate(-50%);
+    -webkit-transform: translate(-50%);
+    z-index: 102;
+    width: 100vw;
+    height: 100vh;
+    img{
+      width: 250px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: $spacer*2;
+    }
+    h3{
+      font-size: $font-size3;
+      font-family: $font1;
+      text-align: center;
+      margin: 0;
+    }
+    a{
+      text-align: center;
+      color: $color2;
+      font-size: $font-size2;
+      font-family: $font2;
+      background-color: white;
+      padding: $spacer/2 $spacer;
+      border-radius: 25em;
+      width: 250px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: $spacer;
+      margin-bottom: $spacer;
+    }
   }
 }
