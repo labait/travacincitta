@@ -7,16 +7,28 @@ body.single-content {
     display: none;
   }
 
-  #close-button {
+  #close-button,
+  #audio-button {
     position: fixed;
-    right: $spacer*3;
-    top: $spacer;
     a {
       color: white;
       font-size: 4em;
     }
+    
+  }
+
+  #close-button {
+    right: $spacer*3;
+    top: $spacer;
     z-index: 102;
   }
+
+  #audio-button {
+    right: $spacer*9;
+    top: $spacer;
+    z-index: 103;
+  }
+
 
   #cinemagraph{
     position: absolute;

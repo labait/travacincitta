@@ -133,14 +133,21 @@ body.single-content #wrapper-footer,
 body.single-content #cookie-law-info-bar,
 body.single-content #cookie-law-info-again {
   display: none; }
+body.single-content #close-button,
+body.single-content #audio-button {
+  position: fixed; }
+  body.single-content #close-button a,
+  body.single-content #audio-button a {
+    color: white;
+    font-size: 4em; }
 body.single-content #close-button {
-  position: fixed;
   right: 45px;
   top: 15px;
   z-index: 102; }
-  body.single-content #close-button a {
-    color: white;
-    font-size: 4em; }
+body.single-content #audio-button {
+  right: 135px;
+  top: 15px;
+  z-index: 103; }
 body.single-content #cinemagraph {
   position: absolute;
   left: 0;

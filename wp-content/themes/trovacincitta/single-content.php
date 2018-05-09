@@ -13,11 +13,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="full-width-page-wrapper">
 	<?php while ( have_posts() ) : the_post(); ?>
-		<?php $cinemagraph = get_field('cinemagraph'); ?>
+		<?php 
+			$cinemagraph = get_field('cinemagraph'); 
+			$audio = get_field('audio'); 
+		?>
 		<?php if( $cinemagraph ): ?>
 			<div id="close-button">
 				<a href="<?php print home_url(); ?>">
 					<i class="fa fa-times" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div id="audio-button">
+				<a href="">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
 				</a>
 			</div>
 			<div id="info">
@@ -27,12 +35,32 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<img src="<?php echo $cinemagraph['url']; ?>" alt="<?php echo $cinemagraph['alt']; ?>" />
 			</div>
 			<?php
-				//dbg($cinemagraph)
+				//dbg($audio)
 			?>
 			<script type="text/javascript">
 				(function($){
 					$(document).ready(function(){
 						var debug = true;
+						var show_info = false;
+						var show_cinemagraph = true;
+						
+						var audio = new Audio("<?php echo $audio['url']; ?>");
+						$("#audio-button a").on("click", function(e){
+							e.preventDefault();
+							var $link = $(this);
+							var $icon = $(this).find("i");
+							if($link.hasClass("play")){
+								audio.pause();
+								$link.removeClass("play")
+								$icon.removeClass("fa-volume-up")
+								$icon.addClass("fa-volume-off")
+							} else {
+								audio.play();
+								$link.addClass("play")
+								$icon.removeClass("fa-volume-off")
+								$icon.addClass("fa-volume-up")			
+							}
+						})
 
 						$('body').loading({
 							message: 'caricamento in corso...',
@@ -49,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						
 						$img.one("load", function() {
 							// do stuff
-							$cinemagraph.show();
+							if(show_cinemagraph) $cinemagraph.show();
 							$('body').loading('stop');
 							$img.css({
 								"height": "100vh",
@@ -58,10 +86,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 							// centering img
 							var scroll_left = ($img.width()-$cinemagraph.width())/2
 							$cinemagraph.scrollLeft(scroll_left);
-							//
-							setTimeout(function(){
-								$info.show();
-							}, (debug ? 1000 : 8000))
+							
+							// info
+							if(show_info) {
+								setTimeout(function(){
+									$info.show();
+								}, (debug ? 1000 : 8000))			
+							}
+
 
 						}).each(function() {
 							if(this.complete) $(this).load();
