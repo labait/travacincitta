@@ -60,8 +60,6 @@ body.page-template-page .location {
 body.page-template-walkthrough {
   font-size: 17px;
   font-family: "Open Sans", sans-serif; }
-  body.page-template-walkthrough .content-area {
-    height: 100vh; }
   body.page-template-walkthrough #slide-title-h2 {
     text-align: center;
     font-family: "BebasNeueBold";
@@ -84,7 +82,6 @@ body.page-template-walkthrough {
     body.page-template-walkthrough .button-skip:hover {
       text-decoration: none; }
   body.page-template-walkthrough .button-start {
-    display: none;
     background-color: #fbba00;
     width: 200px;
     border-radius: 25em;

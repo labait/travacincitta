@@ -1,9 +1,6 @@
 body.page-template-walkthrough {
   font-size: $font-size2;
   font-family: $font2;
-  .content-area{
-    height: 100vh;
-  }
 
   #slide-title-h2{
     text-align: center;
@@ -37,7 +34,6 @@ body.page-template-walkthrough {
   }
 
   .button-start{
-    display: none;
     background-color: $color1;
     width: 200px;
     border-radius: 25em;

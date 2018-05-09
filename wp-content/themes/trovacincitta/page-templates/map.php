@@ -41,7 +41,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	var redirect_url_if_not_in_distance_treshold =  "<?php print get_post_permalink(123); ?>";
 
 	(function ($) {
-  var debug = Boolean(<?php echo get_option( 'trovacincitta_is_debug' ); ?>);
+  var debug = Boolean(<?php echo ( isset($_GET["debug"]) ? $_GET["debug"] : get_option( 'trovacincitta_is_debug' )); ?>);
   var distance_treshold = <?php echo get_option( 'trovacincitta_distance_treshold_for_content'); ?> //km
   var map;
   var infowindow_current = false;

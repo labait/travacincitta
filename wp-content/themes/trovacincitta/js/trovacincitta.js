@@ -36,10 +36,10 @@
         }
     });
 
-    $('#walkthrough').on('afterChange', function(event, slick, currentSlide){
-      $((currentSlide == 4 ? '.button-skip' : '.button-start')).hide();
-      $((currentSlide == 4 ? '.button-start' : '.button-skip')).show();
-    });
+    // $('#walkthrough').on('afterChange', function(event, slick, currentSlide){
+    //   $((currentSlide == 4 ? '.button-skip' : '.button-start')).hide();
+    //   $((currentSlide == 4 ? '.button-start' : '.button-skip')).show();
+    // });
 
   })
 })(jQuery)

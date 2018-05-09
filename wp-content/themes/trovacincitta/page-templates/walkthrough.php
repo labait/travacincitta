@@ -41,13 +41,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php endwhile; wp_reset_query(); ?>
 					</div>
 				</main><!-- #main -->
-				
-				<div class="button-start">
-					<a href="<?php print home_url(); ?>"> Inizia </a>
-				</div>
+			
 
 			
-				<a href="<?php print home_url(); ?>" class="button-skip">Salta <i class="fas fa-angle-right"></i></a>
+				<!-- <a href="<?php print home_url(); ?>" class="button-skip">Salta <i class="fas fa-angle-right"></i></a> -->
 
 			</div><!-- #primary -->
 		</div><!-- .row end -->
