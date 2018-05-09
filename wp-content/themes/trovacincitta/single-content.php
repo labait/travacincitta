@@ -56,7 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<script type="text/javascript">
 				(function($){
 					$(document).ready(function(){
-						var debug = true;
+						var debug = Boolean(<?php echo get_option( 'trovacincitta_is_debug' ); ?>);
 						var show_info = true;
 						var show_cinemagraph = true;
 						
@@ -110,7 +110,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									$('#audio-button a').css('opacity', '0');
 									$("#bg").show();
 									$info.show();
-								}, (debug ? 4000 : 8000))			
+								}, (debug ? 1000 : (<?php echo get_option( 'trovacincitta_seconds_before_info_in_cinemagraph'); ?>*1000)))		
 							}
 
 
