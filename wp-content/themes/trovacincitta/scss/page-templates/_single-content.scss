@@ -2,6 +2,7 @@ body.single-content {
 
   #wrapper-navbar,
   #wrapper-footer,
+  #cookie-law-info-bar,
   #cookie-law-info-again {
     display: none;
   }
@@ -11,8 +12,10 @@ body.single-content {
     right: $spacer*3;
     top: $spacer;
     a {
+      color: white;
       font-size: 4em;
     }
+    z-index: 102;
   }
 
   #cinemagraph{
@@ -22,8 +25,20 @@ body.single-content {
     width: 100vw;
     height: 100vh;
     overflow: scroll;
+    z-index: 100;
     > img {
 
     }
+  }
+
+  #info {
+    display: none;
+    position: absolute;
+    left: 0; 
+    top: 0;
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color1;
   }
 }

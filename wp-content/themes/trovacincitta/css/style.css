@@ -130,13 +130,16 @@ body.page-template-chisiamo .box ul li:hover {
 
 body.single-content #wrapper-navbar,
 body.single-content #wrapper-footer,
+body.single-content #cookie-law-info-bar,
 body.single-content #cookie-law-info-again {
   display: none; }
 body.single-content #close-button {
   position: fixed;
   right: 45px;
-  top: 15px; }
+  top: 15px;
+  z-index: 102; }
   body.single-content #close-button a {
+    color: white;
     font-size: 4em; }
 body.single-content #cinemagraph {
   position: absolute;
@@ -144,7 +147,17 @@ body.single-content #cinemagraph {
   top: 0;
   width: 100vw;
   height: 100vh;
-  overflow: scroll; }
+  overflow: scroll;
+  z-index: 100; }
+body.single-content #info {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 101;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fbba00; }
 
 body.page-template-contact h1 {
   font-family: "BebasNeueBold";

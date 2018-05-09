@@ -15,12 +15,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php $cinemagraph = get_field('cinemagraph'); ?>
 		<?php if( $cinemagraph ): ?>
+			<div id="close-button">
+				<a href="<?php print home_url(); ?>">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div id="info">
+
+			</div>
 			<div id="cinemagraph">
-				<div id="close-button">
-					<a href="<?php print home_url(); ?>">
-						<i class="fa fa-times" aria-hidden="true"></i>
-					</a>
-				</div>
 				<img src="<?php echo $cinemagraph['url']; ?>" alt="<?php echo $cinemagraph['alt']; ?>" />
 			</div>
 			<?php
@@ -28,23 +31,43 @@ $container = get_theme_mod( 'understrap_container_type' );
 			?>
 			<script type="text/javascript">
 				(function($){
-					$cinemagraph = $("#cinemagraph")
-					// $img_original_width = <?php print $cinemagraph['width']; ?>;
-					// $img_original_height = <?php print $cinemagraph['height']; ?>;
-					$img = $cinemagraph.find(">img")
-					
-					// $ratio = $img_original_height / $cinemagraph.height();
-					// $img_width = parseInt($img_original_width * $ratio)
-					// $img_height = parseInt($cinemagraph.height())
+					$(document).ready(function(){
+						var debug = true;
 
-					// $img.width($img_width+"px")
-					// $img.height($img_height+"px")
-					$img.css({
-						"height": "100vh",
-						"max-width": "2000px"
+						$('body').loading({
+							message: 'caricamento in corso...',
+							theme: 'dark',
+							stoppable: true
+						});
+						
+						$info = $("#info")
+						$cinemagraph = $("#cinemagraph")
+						$cinemagraph.hide();
+						$img_original_width = <?php print $cinemagraph['width']; ?>;
+						$img_original_height = <?php print $cinemagraph['height']; ?>;
+						$img = $cinemagraph.find(">img")
+						
+						$img.one("load", function() {
+							// do stuff
+							$cinemagraph.show();
+							$('body').loading('stop');
+							$img.css({
+								"height": "100vh",
+								"max-width": "2000px"
+							})
+							// centering img
+							var scroll_left = ($img.width()-$cinemagraph.width())/2
+							$cinemagraph.scrollLeft(scroll_left);
+							//
+							setTimeout(function(){
+								$info.show();
+							}, (debug ? 1000 : 8000))
+
+						}).each(function() {
+							if(this.complete) $(this).load();
+						});
 					})
-					var scroll_left = ($img.width()-$cinemagraph.width())/2
-					$cinemagraph.scrollLeft(scroll_left);
+
 				})(jQuery);
 			</script>
 		<?php endif; ?>
