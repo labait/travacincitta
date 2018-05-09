@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</a>
 			</div>
 			<div id="audio-button">
-				<a href="">
+				<a href="#">
 					<i class="fa fa-volume-up" aria-hidden="true"></i>
 				</a>
 			</div>
