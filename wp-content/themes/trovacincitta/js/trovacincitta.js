@@ -36,37 +36,10 @@
         }
     });
 
-    //btn walkthrough
-  //  $("#slick-slide-control04").click(function() {
-  //    $('.btn_inizia').show()
-  //    $('.button-start').hide()
-  //  })
-  //  $("#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, #slick-slide-control03").click(function() {
-  //    $('.btn_inizia').hide()
-  //    $('.button-start').show()
-  //  })
-  
-  //$("#slick-slide04").scrollLeft(function() {
-    //var $control04 = $('#slick-slide04');
-    //if($control04.hasClass("slick-active")){
-     // $('.btn_inizia').show();
-     // $('.button-start').hide();
-    //} else {
-      //$('.btn_inizia').hide();
-      //$('.button-start').show();			
-   // }
-  //})
-
-
-  $('#walkthrough').on('atferChange', function(event, slick, currentSlide){
-    var $control04 = $('#slick-slide04');
-    if($control04.hasClass("slick-active")){
-     $('.btn_inizia').show();
-     $('.button-start').hide();
-      } else {
-      $('.btn_inizia').hide();
-      $('.button-start').show();
-  }});
+    $('#walkthrough').on('afterChange', function(event, slick, currentSlide){
+      $((currentSlide == 4 ? '.button-skip' : '.button-start')).hide();
+      $((currentSlide == 4 ? '.button-start' : '.button-skip')).show();
+    });
 
   })
 })(jQuery)

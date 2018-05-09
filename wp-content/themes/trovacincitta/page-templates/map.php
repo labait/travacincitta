@@ -44,6 +44,7 @@ $container = get_theme_mod( 'understrap_container_type' );
   var debug = Boolean(<?php echo get_option( 'trovacincitta_is_debug' ); ?>);
   var distance_treshold = <?php echo get_option( 'trovacincitta_distance_treshold_for_content'); ?> //km
   var map;
+  var infowindow_current = false;
 
   function new_map($el) {
     var $markers = $el.find('.marker');
@@ -102,6 +103,8 @@ $container = get_theme_mod( 'understrap_container_type' );
       });
       google.maps.event.addListener(marker, 'click', function () {
         infowindow.open(map, marker);
+        if(infowindow_current && infowindow_current != infowindow) infowindow_current.close();
+        infowindow_current = infowindow;
       });
     }
   }
