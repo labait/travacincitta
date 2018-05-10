@@ -9,8 +9,8 @@
 @import 'page-templates/_map.scss';
 
 @font-face {
-  font-family: 'BebasNeueBold';
-  src: url('BebasNeueBold.otf') format('embedded-opentype');
+  font-family: 'BebasNeueRegular';
+  src: url('BebasNeueRegular.ttf') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -40,4 +40,3 @@ a {
     padding:$spacer/2 $spacer*2;
   }
 }
-
