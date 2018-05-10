@@ -143,6 +143,12 @@ body.single-content #audio-button {
   left: 45px;
   top: 15px;
   z-index: 104; }
+body.single-content #scroll-icon {
+  position: absolute;
+  bottom: 15px;
+  z-index: 105;
+  left: 50%;
+  -webkit-transform: translate(-50%); }
 body.single-content #cinemagraph {
   position: absolute;
   left: 0;

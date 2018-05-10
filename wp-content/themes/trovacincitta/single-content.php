@@ -19,6 +19,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			$audio = get_field('audio'); 
 		?>
 		<?php if( $cinemagraph ): ?>
+			<div id="scroll-icon">
+					<img src="http://scattanelpassato.it/wp-content/uploads/2018/05/ico_finger_yellow.png" alt="">
+			</div>
 			<div id="close-button">
 				<a href="<?php print home_url(); ?>">
 					<i class="fa fa-times" aria-hidden="true"></i>
@@ -141,6 +144,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								setTimeout(function(){
 									$('#close-button a').css('color', 'white');
 									$('#audio-button a').css('opacity', '0');
+									$('#scroll-icon').css('opacity', '0');
 									$("#bg").show();
 									$info.show();
 								}, (<?php echo get_option( 'trovacincitta_seconds_before_info_in_cinemagraph'); ?>*1000))		

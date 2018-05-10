@@ -14,7 +14,7 @@ body.single-content {
       color: $color1;
       font-size: 3.5em;
     }
-    
+
   }
 
   #close-button {
@@ -29,10 +29,18 @@ body.single-content {
     z-index: 104;
   }
 
+  #scroll-icon {
+    position: absolute;
+    bottom: $spacer;
+    z-index: 105;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+  }
+
 
   #cinemagraph{
     position: absolute;
-    left: 0; 
+    left: 0;
     top: 0;
     width: 100vw;
     height: 100vh;
@@ -54,7 +62,7 @@ body.single-content {
   #info {
     display: none;
     position: absolute;
-    left: 50%; 
+    left: 50%;
     top: 25%;
     transform: translate(-50%, -50%);
     -ms-transform:translate(-50%);
