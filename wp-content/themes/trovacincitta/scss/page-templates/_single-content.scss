@@ -31,7 +31,7 @@ body.single-content {
 
   #scroll-icon {
     position: absolute;
-    bottom: $spacer;
+    bottom: $spacer*3;
     z-index: 105;
     left: 50%;
     -webkit-transform: translate(-50%);

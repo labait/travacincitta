@@ -145,7 +145,7 @@ body.single-content #audio-button {
   z-index: 104; }
 body.single-content #scroll-icon {
   position: absolute;
-  bottom: 15px;
+  bottom: 45px;
   z-index: 105;
   left: 50%;
   -webkit-transform: translate(-50%); }
