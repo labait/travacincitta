@@ -244,7 +244,7 @@ body.page-template-map #full-width-page-wrapper {
 
 @font-face {
   font-family: 'BebasNeueRegular';
-  src: url("BebasNeueRegular.ttf") format("embedded-opentype");
+  src: url("../fonts/bebasneue-regular-webfont.woff2") format("woff2"), url("../fonts/bebasneue-regular-webfont.woff") format("woff"), url("../fonts/bebasneue-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 body,
