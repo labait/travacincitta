@@ -62,7 +62,7 @@ body.page-template-walkthrough {
   font-family: "Open Sans", sans-serif; }
   body.page-template-walkthrough #slide-title-h2 {
     text-align: center;
-    font-family: "BebasNeueBold";
+    font-family: "BebasNeueRegular";
     font-size: 40px;
     color: #fbba00;
     margin-top: 30px; }
@@ -173,7 +173,7 @@ body.single-content #info {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%);
   -webkit-transform: translate(-50%);
-  z-index: 102;
+  z-index: 106;
   width: 100vw;
   height: 100vh; }
   body.single-content #info img {
