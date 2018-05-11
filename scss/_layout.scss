@@ -1,0 +1,46 @@
+$navbar_height: 60px;
+$footer_height: 60px;
+
+h1{
+  margin-top: $spacer*2;
+}
+
+.wrapper {
+  padding: 0;
+}
+
+
+
+nav{
+  #navbarNavDropdown{
+    a{
+      font-family: $font2;
+      font-size: $font-size2;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+    li.active {
+      a {
+        font-weight: bold;
+        color: $color1;
+      }
+    }
+  }
+}
+
+footer{
+  height: $footer_height;
+  bottom: 0px;
+  .site-info{
+    font-family: $font2;
+    font-size: $font-size1/3;
+    text-align: center;
+  }
+  a{
+    color: $color2;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}

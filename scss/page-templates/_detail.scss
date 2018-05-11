@@ -1,0 +1,63 @@
+body.page-template-detail {
+  background: $color1;
+  nav{
+    display: none;
+  }
+  .wrapper{
+    padding: 0;
+  }
+  .container{
+    margin: 0;
+  }
+  #primary{
+    margin: 0;
+  }
+  .bg{
+    display: none;
+    position: absolute;
+    background: $color1;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .overlay{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    img{
+      width: 250px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: $spacer*2;
+    }
+    h3{
+      font-size: $font-size3;
+      font-family: $font1;
+      text-align: center;
+      margin: 0;
+    }
+    a{
+      text-align: center;
+      color: $color2;
+      font-size: $font-size2;
+      font-family: $font2;
+      background-color: white;
+      padding: $spacer/2 $spacer;
+      border-radius: 25em;
+      width: 250px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: $spacer;
+      margin-bottom: $spacer;
+    }
+  }
+  img.cinemagraph {
+    height: 100vh;
+    max-width: 2000px;
+  }
+}
