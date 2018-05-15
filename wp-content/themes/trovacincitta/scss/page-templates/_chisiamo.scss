@@ -21,18 +21,10 @@ body.page-template-chisiamo {
       font-family: $font2;
     }
     ul {
-      list-style: none;
-      position: relative;
-      float: left;
-      display: block;
-      left: 50%;
       li {
-        position: relative;
         float: left;
         display: block;
-        right: 50%;
         filter: grayscale(100%);
-        margin: $spacer;
       }
       li:hover {
         filter: none;

@@ -1,23 +1,11 @@
+h1 {
+  margin-top: 30px; }
+
 .wrapper {
   padding: 0; }
 
-#full-width-page-wrapper {
-  min-height: calc(100vh - 60px - 60px); }
-  #full-width-page-wrapper > div {
-    min-height: inherit; }
-    #full-width-page-wrapper > div > .row {
-      min-height: inherit; }
-      #full-width-page-wrapper > div > .row > #primary {
-        min-height: inherit; }
-        #full-width-page-wrapper > div > .row > #primary > #main {
-          min-height: inherit; }
-
-nav .navbar-brand {
-  width: 60px;
-  height: auto; }
 nav #navbarNavDropdown a {
   font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
   font-size: 17px; }
 nav #navbarNavDropdown a:hover {
   text-decoration: underline; }
@@ -30,23 +18,56 @@ footer {
   bottom: 0px; }
   footer .site-info {
     font-family: "Open Sans", sans-serif;
-    font-size: 10px;
+    font-size: 13.3333333333px;
     text-align: center; }
   footer a {
     color: #424345; }
   footer a:hover {
     text-decoration: underline; }
 
+body.page-template-events h3, body.page-template-events .location,
+body.page-template-page h3,
+body.page-template-page .location {
+  color: #424345;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold; }
+body.page-template-events h4,
+body.page-template-page h4 {
+  color: #424345;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic; }
+body.page-template-events .item,
+body.page-template-page .item {
+  border: 15px solid white;
+  color: #424345;
+  background: #f8f8f8;
+  padding: 15px;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif; }
+body.page-template-events h1,
+body.page-template-page h1 {
+  font-family: "BebasNeueBold";
+  color: #fbba00;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center; }
+body.page-template-events .location,
+body.page-template-page .location {
+  margin-top: 30px; }
+
 body.page-template-walkthrough {
   font-size: 17px;
   font-family: "Open Sans", sans-serif; }
-  body.page-template-walkthrough #walkthrough.slick .item {
-    height: 300px; }
+  body.page-template-walkthrough .content-area {
+    height: 100vh; }
   body.page-template-walkthrough #slide-title-h2 {
     text-align: center;
     font-family: "BebasNeueBold";
     font-size: 40px;
-    color: #fbba00; }
+    color: #fbba00;
+    margin-top: 30px; }
   body.page-template-walkthrough .slide-img-container {
     text-align: -webkit-center;
     margin-top: 15px;
@@ -83,9 +104,6 @@ body.page-template-walkthrough {
   body.page-template-walkthrough .btn_inizia:hover {
     text-decoration: none; }
 
-body.page-template-map .acf-map {
-  width: 100%; }
-
 body.page-template-chisiamo .box h1 {
   text-align: center;
   color: #fbba00;
@@ -103,130 +121,30 @@ body.page-template-chisiamo .box p {
   color: #424345;
   font-size: 17px;
   font-family: "Open Sans", sans-serif; }
-body.page-template-chisiamo .box ul {
-  list-style: none;
-  position: relative;
+body.page-template-chisiamo .box ul li {
   float: left;
   display: block;
-  left: 50%; }
-  body.page-template-chisiamo .box ul li {
-    position: relative;
-    float: left;
-    display: block;
-    right: 50%;
-    filter: grayscale(100%);
-    margin: 15px; }
-  body.page-template-chisiamo .box ul li:hover {
-    filter: none; }
+  filter: grayscale(100%); }
+body.page-template-chisiamo .box ul li:hover {
+  filter: none; }
 
-body.page-template-scattanelpassato h1 {
-  color: #fbba00;
-  text-transform: uppercase;
-  font-size: 40px;
-  font-family: "BebasNeueBold";
-  text-align: center; }
-body.page-template-scattanelpassato .box ul {
-  list-style-type: none;
-  padding: 0; }
-  body.page-template-scattanelpassato .box ul li {
-    width: 300px;
-    margin: 15px;
-    display: inline-block;
-    vertical-align: middle; }
-    body.page-template-scattanelpassato .box ul li h2 {
-      color: #fbba00;
-      font-size: 17px;
-      font-family: "Open Sans", sans-serif; }
-    body.page-template-scattanelpassato .box ul li p {
-      color: #424345;
-      background: #f8f8f8;
-      padding: 15px;
-      font-size: 17px;
-      font-family: "Open Sans", sans-serif; }
-
-body.page-template-detail {
-  background: #fbba00; }
-  body.page-template-detail nav {
-    display: none; }
-  body.page-template-detail .wrapper {
-    padding: 0; }
-  body.page-template-detail .container {
-    margin: 0; }
-  body.page-template-detail #primary {
-    margin: 0; }
-  body.page-template-detail .bg {
-    display: none;
-    position: absolute;
-    background: #fbba00;
-    opacity: 0.9;
-    width: 100%;
-    height: 100%;
-    z-index: 1; }
-  body.page-template-detail .overlay {
-    display: none;
-    position: absolute;
-    z-index: 2;
-    width: 100%; }
-    body.page-template-detail .overlay img {
-      width: 250px;
-      height: auto;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 30px; }
-    body.page-template-detail .overlay h3 {
-      font-size: 25px;
-      font-family: "BebasNeueBold";
-      text-align: center;
-      margin: 0; }
-    body.page-template-detail .overlay a {
-      text-align: center;
-      color: #424345;
-      font-size: 17px;
-      font-family: "Open Sans", sans-serif;
-      background-color: white;
-      padding: 7.5px 15px;
-      border-radius: 25em;
-      width: 250px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 15px;
-      margin-bottom: 15px; }
-  body.page-template-detail img.cinemagraph {
-    height: 100vh;
-    max-width: 2000px; }
-
-body.page-template-bresciaphotofestival-eventi h1 {
-  color: #fbba00;
-  text-transform: uppercase;
-  font-size: 40px;
-  font-family: "BebasNeueBold";
-  text-align: center; }
-body.page-template-bresciaphotofestival-eventi h2 {
-  color: #fbba00;
-  text-transform: uppercase;
-  font-size: 40px;
-  font-family: "BebasNeueBold";
-  text-align: center; }
-body.page-template-bresciaphotofestival-eventi h3 {
-  font-size: 26.6666666667px;
-  font-family: "Open Sans", sans-serif;
-  margin-left: 15px; }
-body.page-template-bresciaphotofestival-eventi .box ul {
-  list-style-type: none;
-  padding: 0; }
-  body.page-template-bresciaphotofestival-eventi .box ul li {
-    display: inline-block;
-    width: 330px;
-    height: 230px;
-    color: #424345;
-    background: #f8f8f8;
-    margin: 15px;
-    padding: 15px;
-    font-size: 17px;
-    font-family: "Open Sans", sans-serif;
-    vertical-align: middle; }
+body.single-content #wrapper-navbar,
+body.single-content #wrapper-footer,
+body.single-content #cookie-law-info-again {
+  display: none; }
+body.single-content #close-button {
+  position: fixed;
+  right: 45px;
+  top: 15px; }
+  body.single-content #close-button a {
+    font-size: 4em; }
+body.single-content #cinemagraph {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll; }
 
 body.page-template-contact h1 {
   font-family: "BebasNeueBold";
@@ -251,6 +169,21 @@ body.page-template-contact .wpcf7 input[type=submit] {
   width: 180px;
   color: white;
   float: right; }
+
+body.page-template-map .acf-map {
+  width: 100%; }
+body.page-template-map .gm-style-iw h4 a {
+  color: #424345; }
+body.page-template-map #full-width-page-wrapper {
+  min-height: calc(100vh - 60px - 60px); }
+  body.page-template-map #full-width-page-wrapper > div {
+    min-height: inherit; }
+    body.page-template-map #full-width-page-wrapper > div > .row {
+      min-height: inherit; }
+      body.page-template-map #full-width-page-wrapper > div > .row > #primary {
+        min-height: inherit; }
+        body.page-template-map #full-width-page-wrapper > div > .row > #primary > #main {
+          min-height: inherit; }
 
 @font-face {
   font-family: 'BebasNeueBold';
