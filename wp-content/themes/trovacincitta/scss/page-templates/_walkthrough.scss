@@ -1,13 +1,10 @@
 body.page-template-walkthrough {
   font-size: $font-size2;
   font-family: $font2;
-  .content-area{
-    height: 100vh;
-  }
 
   #slide-title-h2{
     text-align: center;
-    font-family: "BebasNeueBold";
+    font-family: $font1;
     font-size: $font-size1;
     color: $color1;
     margin-top: $spacer*2;
@@ -23,22 +20,20 @@ body.page-template-walkthrough {
     width: 180px;
   }
 
-  .button-start{
-    width: 160px;
+  .button-skip{
     height: 60px;
     line-height: 60px;
     text-align: center;
-    border-radius: 30px;
-    margin-left: 50%;
-    left: -80px;
-    color: white;
-  }
-  .button-start:hover{
-    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #000000;
+
+    &:hover{
+      text-decoration: none;
+    }
   }
 
-  .btn_inizia{
-    display: none;
+  .button-start{
     background-color: $color1;
     width: 200px;
     border-radius: 25em;
@@ -55,7 +50,7 @@ body.page-template-walkthrough {
       margin-bottom: $spacer;
     }
   }
-  .btn_inizia:hover{
+  .button-start:hover{
     text-decoration: none;
   }
 }

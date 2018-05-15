@@ -41,28 +41,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php endwhile; wp_reset_query(); ?>
 					</div>
 				</main><!-- #main -->
-				<div class="btn_inizia">
-					<a href="http://scattanelpassato.it/"> Inizia </a>
-				</div>
+			
 
-
-				<a href="http://scattanelpassato.it/" class="button-start" style="
-					display: block;
-					width: 160px;
-					text-align: center;
-					margin-left: 50%;
-					left: -80px;
-					color: #000000;
-					position: relative;
-				">Salta <i class="fas fa-angle-right"></i></i></a>
-
+			
+				<!-- <a href="<?php print home_url(); ?>" class="button-skip">Salta <i class="fas fa-angle-right"></i></a> -->
 
 			</div><!-- #primary -->
-
 		</div><!-- .row end -->
-
 	</div><!-- Container end -->
-
 </div><!-- Wrapper end -->
-
 <?php get_footer(); ?>

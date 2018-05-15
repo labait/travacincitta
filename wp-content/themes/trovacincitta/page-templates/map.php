@@ -11,6 +11,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+
 <div class="wrapper" id="full-width-page-wrapper">
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 		<div class="row">
@@ -40,9 +41,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 	var redirect_url_if_not_in_distance_treshold =  "<?php print get_post_permalink(123); ?>";
 
 	(function ($) {
-  var debug = true;
-  var distance_treshold = 0.2 //km
+  var debug = Boolean(<?php echo ( isset($_GET["debug"]) ? $_GET["debug"] : get_option( 'trovacincitta_is_debug' )); ?>);
+  var distance_treshold = <?php echo get_option( 'trovacincitta_distance_treshold_for_content'); ?> //km
   var map;
+  var infowindow_current = false;
 
   function new_map($el) {
     var $markers = $el.find('.marker');
@@ -101,6 +103,8 @@ $container = get_theme_mod( 'understrap_container_type' );
       });
       google.maps.event.addListener(marker, 'click', function () {
         infowindow.open(map, marker);
+        if(infowindow_current && infowindow_current != infowindow) infowindow_current.close();
+        infowindow_current = infowindow;
       });
     }
   }
