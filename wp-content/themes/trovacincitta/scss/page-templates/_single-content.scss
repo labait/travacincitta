@@ -21,6 +21,29 @@ body.single-content {
     right: $spacer*3;
     top: $spacer;
     z-index: 103;
+    display: none;
+  }
+
+  #info-button {
+    bottom: $spacer*3;
+    right: $spacer*3;
+    z-index: 103;
+    position: absolute;
+    a{
+      color: $color1;
+      font-size: 3.5em;
+    }
+  }
+
+  #home-button {
+    bottom: $spacer*3;
+    left: $spacer*3;
+    z-index: 103;
+    position: absolute;
+    a{
+      color: $color1;
+      font-size: 3.5em;
+    }
   }
 
   #audio-button {

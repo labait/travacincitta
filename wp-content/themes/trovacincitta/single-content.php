@@ -14,17 +14,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="full-width-page-wrapper">
 	<?php while ( have_posts() ) : the_post(); ?>
-		<?php 
-			$cinemagraph = get_field('cinemagraph'); 
-			$audio = get_field('audio'); 
+		<?php
+			$cinemagraph = get_field('cinemagraph');
+			$audio = get_field('audio');
 		?>
 		<?php if( $cinemagraph ): ?>
 			<div id="scroll-icon">
 					<img src="http://scattanelpassato.it/wp-content/uploads/2018/05/ico_finger_yellow.png" alt="">
 			</div>
 			<div id="close-button">
-				<a href="<?php print home_url(); ?>">
+				<a href="<?php  $cinemagraph ?>">
 					<i class="fa fa-times" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div id="home-button">
+				<a href="<?php print home_url(); ?>">
+					<i class="fa fa-home" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div id="info-button">
+				<a href="<?php print  $info ?>">
+					<i class="fa fa-info-circle" aria-hidden="true"></i>
 				</a>
 			</div>
 			<?php if($audio): ?>
@@ -70,7 +80,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						window.onpopstate = function(event) {
 								history.go(1);
 						};
-						
+
 						var audio = new Audio("<?php echo $audio['url']; ?>");
 						$("#audio-button a").on("click", function(e){
 							e.preventDefault();
@@ -85,7 +95,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								audio.play();
 								$link.addClass("play")
 								$icon.removeClass("fa-volume-off")
-								$icon.addClass("fa-volume-up")			
+								$icon.addClass("fa-volume-up")
 							}
 						})
 
@@ -94,7 +104,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							theme: 'dark',
 							stoppable: true
 						});
-						
+
 						var $info = $("#info")
 						var $cinemagraph = $("#cinemagraph")
 						$cinemagraph.hide();
@@ -119,12 +129,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 									"width": imgW+"px",
 									"margin-top": verticalAdjust+"px"
 								})
-							}			
+							}
 
 							var scroll_left = ($img.width()-$cinemagraph.width())/2
 							$cinemagraph.scrollLeft(scroll_left);
 						}
-						
+
 						$img.one("load", function() {
 							// do stuff
 							$cinemagraph.show();
@@ -138,16 +148,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 							$(window).on("resize", function(){
 								centerImg()
 							})
-							
+
 							// info
 							if(!debug) {
 								setTimeout(function(){
+									$('#close-button').show();
 									$('#close-button a').css('color', 'white');
 									$('#audio-button a').css('opacity', '0');
 									$('#scroll-icon').css('opacity', '0');
+									$('#info-button a').css('opacity', '0');
+									$('#home-button a').css('opacity', '0');
 									$("#bg").show();
 									$info.show();
-								}, (<?php echo get_option( 'trovacincitta_seconds_before_info_in_cinemagraph'); ?>*1000))		
+								}, (<?php echo get_option( 'trovacincitta_seconds_before_info_in_cinemagraph'); ?>*1000))
 							}
 
 
@@ -163,4 +176,3 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>
-
