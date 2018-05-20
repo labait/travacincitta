@@ -138,7 +138,7 @@ body.single-content #audio-button {
 body.single-content #close-button {
   right: 45px;
   top: 15px;
-  z-index: 103; }
+  z-index: 999; }
 body.single-content #audio-button {
   left: 45px;
   top: 15px;
@@ -169,7 +169,7 @@ body.single-content #info {
   display: none;
   position: absolute;
   left: 50%;
-  top: 25%;
+  padding-top: 14%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%);
   -webkit-transform: translate(-50%);

@@ -20,7 +20,7 @@ body.single-content {
   #close-button {
     right: $spacer*3;
     top: $spacer;
-    z-index: 103;
+    z-index: 999;
   }
 
   #audio-button {
@@ -63,7 +63,7 @@ body.single-content {
     display: none;
     position: absolute;
     left: 50%;
-    top: 25%;
+    padding-top: 14%;
     transform: translate(-50%, -50%);
     -ms-transform:translate(-50%);
     -webkit-transform: translate(-50%);
