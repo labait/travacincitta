@@ -140,7 +140,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         showUserPosition(map, pos);
       }, function () {
         handleLocationError(true, map.getCenter());
-        $('body').loading('stop');
+        //$('body').loading('stop');
+        window.location.href="<?php echo walkthrough['url']; ?>"
       });
     } else {
       // Browser doesn't support Geolocation
