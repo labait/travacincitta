@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</a>
 			</div>
 			<div id="info-button">
-				<a href="<?php print  $info ?>">
+				<a href="#" onclick="">
 					<i class="fa fa-info-circle" aria-hidden="true"></i>
 				</a>
 			</div>
@@ -153,15 +153,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							// info
 							if(!debug) {
 								setTimeout(function(){
-									$('#close-button').show();
-									$('#close-button a').css('color', 'white');
-									$('#audio-button a').css('opacity', '0');
-									$('#scroll-icon').css('opacity', '0');
-									$('#info-button a').css('opacity', '0');
-									$('#home-button a').css('opacity', '0');
-									$("#bg").show();
-									audio.pause();
-									$info.show();
+									openInfo();
 								}, (<?php echo get_option( 'trovacincitta_seconds_before_info_in_cinemagraph'); ?>*1000))
 							}
 
@@ -169,7 +161,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 						}).each(function() {
 							if(this.complete) $(this).load();
 						});
+
+
+						$("#info-button a").on("click",openInfo);
+						function openInfo() {
+							$('#close-button').show();
+							$('#close-button a').css('color', 'white');
+							$('#audio-button a').css('opacity', '0');
+							$('#scroll-icon').css('opacity', '0');
+							$('#info-button a').css('opacity', '0');
+							$('#home-button a').css('opacity', '0');
+							$("#bg").show();
+							audio.pause();
+							$info.show();
+						}
+
+
 					})
+
+
+
 
 				})(jQuery);
 			</script>
