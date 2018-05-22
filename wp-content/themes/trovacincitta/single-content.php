@@ -92,6 +92,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								$icon.removeClass("fa-volume-up")
 								$icon.addClass("fa-volume-off")
 							} else {
+								audio.loop = true;
 								audio.play();
 								$link.addClass("play")
 								$icon.removeClass("fa-volume-off")
@@ -159,6 +160,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									$('#info-button a').css('opacity', '0');
 									$('#home-button a').css('opacity', '0');
 									$("#bg").show();
+									audio.pause();
 									$info.show();
 								}, (<?php echo get_option( 'trovacincitta_seconds_before_info_in_cinemagraph'); ?>*1000))
 							}
