@@ -20,9 +20,8 @@ body.single-content {
   #close-button {
     right: $spacer*3;
     top: $spacer;
-
-    z-index: 103;
     display: none;
+    z-index: 999;
   }
 
   #info-button {
@@ -46,7 +45,7 @@ body.single-content {
       font-size: 3.5em;
     }
 
-    z-index: 999;
+
 
   }
 
